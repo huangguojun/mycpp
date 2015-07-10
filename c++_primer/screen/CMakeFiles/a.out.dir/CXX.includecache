@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/work/project/c_c++_pro/c++_primer/screen/main.cpp
+screen.h
+/work/project/c_c++_pro/c++_primer/screen/screen.h
+iostream
+-
+cstdio
+-
+cstdlib
+-
+
+/work/project/c_c++_pro/c++_primer/screen/screen.cpp
+screen.h
+/work/project/c_c++_pro/c++_primer/screen/screen.h
+
+/work/project/c_c++_pro/c++_primer/screen/screen.h
+string
+-
+

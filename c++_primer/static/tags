@@ -1,0 +1,18 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+STATIC_SAMPLE_H	StaticSample.h	20;"	d
+StaticSample	StaticSample.h	/^		StaticSample();$/;"	p	class:StaticSample	access:public	signature:()
+StaticSample	StaticSample.h	/^class StaticSample$/;"	c
+StaticSample::StaticSample	StaticSample.h	/^		StaticSample();$/;"	p	class:StaticSample	access:public	signature:()
+StaticSample::display	StaticSample.h	/^		static void display();$/;"	p	class:StaticSample	access:public	signature:()
+StaticSample::obj_count	StaticSample.h	/^		static int obj_count;$/;"	m	class:StaticSample	access:private
+StaticSample::obj_living	StaticSample.h	/^		static int obj_living;$/;"	m	class:StaticSample	access:private
+StaticSample::~StaticSample	StaticSample.h	/^		~StaticSample();$/;"	p	class:StaticSample	access:public	signature:()
+display	StaticSample.h	/^		static void display();$/;"	p	class:StaticSample	access:public	signature:()
+obj_count	StaticSample.h	/^		static int obj_count;$/;"	m	class:StaticSample	access:private
+obj_living	StaticSample.h	/^		static int obj_living;$/;"	m	class:StaticSample	access:private
+~StaticSample	StaticSample.h	/^		~StaticSample();$/;"	p	class:StaticSample	access:public	signature:()
