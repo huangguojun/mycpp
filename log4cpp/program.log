@@ -22,3 +22,7 @@
 1473652061 WARN sub1 : sub1 warn
 1473652061 ERROR sub1 : Streamed sub1 error
 1473652061 WARN sub1 : Streamed sub1 warn
+1473733495 ERROR sub1 : sub1 error
+1473733495 WARN sub1 : sub1 warn
+1473733495 ERROR sub1 : Streamed sub1 error
+1473733495 WARN sub1 : Streamed sub1 warn

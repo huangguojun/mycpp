@@ -34,5 +34,4 @@ int main()
 {
 	boost::shared_ptr<A> a1(new A());
 	a1->print();
-
 }
