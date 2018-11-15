@@ -1,0 +1,88 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Application	main.cpp	/^	Application() $/;"	f	struct:Application	access:public	signature:()
+Application	main.cpp	/^struct Application $/;"	s	file:
+Application::Application	main.cpp	/^	Application() $/;"	f	struct:Application	access:public	signature:()
+Application::controller	main.cpp	/^	Controller controller; $/;"	m	struct:Application	file:	access:public
+Application::model	main.cpp	/^	Model model; $/;"	m	struct:Application	file:	access:public
+Application::run	main.cpp	/^	void run()$/;"	f	struct:Application	access:public	signature:()
+Application::views	main.cpp	/^	Views views; $/;"	m	struct:Application	file:	access:public
+Controller	main.cpp	/^struct Controller $/;"	s	file:
+Controller::MessageLoop	main.cpp	/^	void MessageLoop() $/;"	f	struct:Controller	access:public	signature:()
+Controller::model	main.cpp	/^	Model*model; $/;"	m	struct:Controller	file:	access:public
+Controller::setModel	main.cpp	/^	void setModel(Model&a){model=&a;} $/;"	f	struct:Controller	access:public	signature:(Model&a)
+CreditsView	main.cpp	/^struct CreditsView:Observer $/;"	s	file:	inherits:Observer
+CreditsView::update	main.cpp	/^	void update(void*a) $/;"	f	struct:CreditsView	access:public	signature:(void*a)
+MessageLoop	main.cpp	/^	void MessageLoop() $/;"	f	struct:Controller	access:public	signature:()
+Model	main.cpp	/^	Model() : $/;"	f	struct:Model	access:public	signature:()
+Model	main.cpp	/^struct Model:Observable $/;"	s	file:	inherits:Observable
+Model::Model	main.cpp	/^	Model() : $/;"	f	struct:Model	access:public	signature:()
+Model::credits	main.cpp	/^	string credits; $/;"	m	struct:Model	file:	access:public
+Model::credits_caption	main.cpp	/^	string credits_caption; $/;"	m	struct:Model	file:	access:public
+Model::getCredits	main.cpp	/^	string getCredits(){return credits;} $/;"	f	struct:Model	access:public	signature:()
+Model::getCredits_Caption	main.cpp	/^	string getCredits_Caption(){return credits_caption;} $/;"	f	struct:Model	access:public	signature:()
+Model::getTitle	main.cpp	/^	string getTitle(){return title;} $/;"	f	struct:Model	access:public	signature:()
+Model::getTitle_Caption	main.cpp	/^	string getTitle_Caption(){return title_caption;} $/;"	f	struct:Model	access:public	signature:()
+Model::getVersion	main.cpp	/^	string getVersion(){return version;} $/;"	f	struct:Model	access:public	signature:()
+Model::getVersion_Caption	main.cpp	/^	string getVersion_Caption(){return version_caption;} $/;"	f	struct:Model	access:public	signature:()
+Model::setCredits	main.cpp	/^	void setCredits(string a){credits=a;notifyObservers();} $/;"	f	struct:Model	access:public	signature:(string a)
+Model::setTitle	main.cpp	/^	void setTitle(string a){title=a;notifyObservers();} $/;"	f	struct:Model	access:public	signature:(string a)
+Model::setVersion	main.cpp	/^	void setVersion(string a){version=a;notifyObservers();} $/;"	f	struct:Model	access:public	signature:(string a)
+Model::title	main.cpp	/^	string title; $/;"	m	struct:Model	file:	access:public
+Model::title_caption	main.cpp	/^	string title_caption; $/;"	m	struct:Model	file:	access:public
+Model::version	main.cpp	/^	string version; $/;"	m	struct:Model	file:	access:public
+Model::version_caption	main.cpp	/^	string version_caption; $/;"	m	struct:Model	file:	access:public
+Observable	main.cpp	/^struct Observable $/;"	s	file:
+Observable::addObserver	main.cpp	/^	void addObserver(Observer*a){observers.push_back(a);} $/;"	f	struct:Observable	access:public	signature:(Observer*a)
+Observable::notifyObservers	main.cpp	/^	void notifyObservers() $/;"	f	struct:Observable	access:public	signature:()
+Observable::observers	main.cpp	/^	vector<Observer*>observers; $/;"	m	struct:Observable	file:	access:public
+Observer	main.cpp	/^struct Observer $/;"	s	file:
+Observer::update	main.cpp	/^	virtual void update(void*)=0; $/;"	p	struct:Observer	file:	access:public	signature:(void*)
+TitleView	main.cpp	/^struct TitleView:Observer $/;"	s	file:	inherits:Observer
+TitleView::update	main.cpp	/^	void update(void*a) $/;"	f	struct:TitleView	access:public	signature:(void*a)
+VersionView	main.cpp	/^struct VersionView:Observer $/;"	s	file:	inherits:Observer
+VersionView::update	main.cpp	/^	void update(void*a) $/;"	f	struct:VersionView	access:public	signature:(void*a)
+Views	main.cpp	/^struct Views:Observer $/;"	s	file:	inherits:Observer
+Views::creditsview	main.cpp	/^	CreditsView creditsview; $/;"	m	struct:Views	file:	access:public
+Views::setModel	main.cpp	/^	void setModel(Observable&a) $/;"	f	struct:Views	access:public	signature:(Observable&a)
+Views::titleview	main.cpp	/^	TitleView titleview; $/;"	m	struct:Views	file:	access:public
+Views::update	main.cpp	/^	void update(void*a) $/;"	f	struct:Views	access:public	signature:(void*a)
+Views::versionview	main.cpp	/^	VersionView versionview; $/;"	m	struct:Views	file:	access:public
+addObserver	main.cpp	/^	void addObserver(Observer*a){observers.push_back(a);} $/;"	f	struct:Observable	access:public	signature:(Observer*a)
+controller	main.cpp	/^	Controller controller; $/;"	m	struct:Application	file:	access:public
+credits	main.cpp	/^	string credits; $/;"	m	struct:Model	file:	access:public
+credits_caption	main.cpp	/^	string credits_caption; $/;"	m	struct:Model	file:	access:public
+creditsview	main.cpp	/^	CreditsView creditsview; $/;"	m	struct:Views	file:	access:public
+getCredits	main.cpp	/^	string getCredits(){return credits;} $/;"	f	struct:Model	access:public	signature:()
+getCredits_Caption	main.cpp	/^	string getCredits_Caption(){return credits_caption;} $/;"	f	struct:Model	access:public	signature:()
+getTitle	main.cpp	/^	string getTitle(){return title;} $/;"	f	struct:Model	access:public	signature:()
+getTitle_Caption	main.cpp	/^	string getTitle_Caption(){return title_caption;} $/;"	f	struct:Model	access:public	signature:()
+getVersion	main.cpp	/^	string getVersion(){return version;} $/;"	f	struct:Model	access:public	signature:()
+getVersion_Caption	main.cpp	/^	string getVersion_Caption(){return version_caption;} $/;"	f	struct:Model	access:public	signature:()
+main	main.cpp	/^int main() $/;"	f	signature:()
+model	main.cpp	/^	Model model; $/;"	m	struct:Application	file:	access:public
+model	main.cpp	/^	Model*model; $/;"	m	struct:Controller	file:	access:public
+notifyObservers	main.cpp	/^	void notifyObservers() $/;"	f	struct:Observable	access:public	signature:()
+observers	main.cpp	/^	vector<Observer*>observers; $/;"	m	struct:Observable	file:	access:public
+run	main.cpp	/^	void run()$/;"	f	struct:Application	access:public	signature:()
+setCredits	main.cpp	/^	void setCredits(string a){credits=a;notifyObservers();} $/;"	f	struct:Model	access:public	signature:(string a)
+setModel	main.cpp	/^	void setModel(Model&a){model=&a;} $/;"	f	struct:Controller	access:public	signature:(Model&a)
+setModel	main.cpp	/^	void setModel(Observable&a) $/;"	f	struct:Views	access:public	signature:(Observable&a)
+setTitle	main.cpp	/^	void setTitle(string a){title=a;notifyObservers();} $/;"	f	struct:Model	access:public	signature:(string a)
+setVersion	main.cpp	/^	void setVersion(string a){version=a;notifyObservers();} $/;"	f	struct:Model	access:public	signature:(string a)
+title	main.cpp	/^	string title; $/;"	m	struct:Model	file:	access:public
+title_caption	main.cpp	/^	string title_caption; $/;"	m	struct:Model	file:	access:public
+titleview	main.cpp	/^	TitleView titleview; $/;"	m	struct:Views	file:	access:public
+update	main.cpp	/^	virtual void update(void*)=0; $/;"	p	struct:Observer	file:	access:public	signature:(void*)
+update	main.cpp	/^	void update(void*a) $/;"	f	struct:CreditsView	access:public	signature:(void*a)
+update	main.cpp	/^	void update(void*a) $/;"	f	struct:TitleView	access:public	signature:(void*a)
+update	main.cpp	/^	void update(void*a) $/;"	f	struct:VersionView	access:public	signature:(void*a)
+update	main.cpp	/^	void update(void*a) $/;"	f	struct:Views	access:public	signature:(void*a)
+version	main.cpp	/^	string version; $/;"	m	struct:Model	file:	access:public
+version_caption	main.cpp	/^	string version_caption; $/;"	m	struct:Model	file:	access:public
+versionview	main.cpp	/^	VersionView versionview; $/;"	m	struct:Views	file:	access:public
+views	main.cpp	/^	Views views; $/;"	m	struct:Application	file:	access:public

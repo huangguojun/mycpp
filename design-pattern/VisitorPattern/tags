@@ -1,0 +1,59 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Accept	Element.cpp	/^void ConcreteElementA::Accept(Visitor* vis) {$/;"	f	class:ConcreteElementA	signature:(Visitor* vis)
+Accept	Element.cpp	/^void ConcreteElementB::Accept(Visitor* vis) {$/;"	f	class:ConcreteElementB	signature:(Visitor* vis)
+Accept	Element.h	/^    virtual void Accept(Visitor* vis) = 0;$/;"	p	class:Element	access:public	signature:(Visitor* vis)
+Accept	Element.h	/^    void Accept(Visitor* vis);$/;"	p	class:ConcreteElementA	access:public	signature:(Visitor* vis)
+Accept	Element.h	/^    void Accept(Visitor* vis);$/;"	p	class:ConcreteElementB	access:public	signature:(Visitor* vis)
+ConcreteElementA	Element.h	/^class ConcreteElementA :public Element {$/;"	c	inherits:Element
+ConcreteElementA::Accept	Element.cpp	/^void ConcreteElementA::Accept(Visitor* vis) {$/;"	f	class:ConcreteElementA	signature:(Visitor* vis)
+ConcreteElementA::Accept	Element.h	/^    void Accept(Visitor* vis);$/;"	p	class:ConcreteElementA	access:public	signature:(Visitor* vis)
+ConcreteElementB	Element.h	/^class ConcreteElementB :public Element {$/;"	c	inherits:Element
+ConcreteElementB::Accept	Element.cpp	/^void ConcreteElementB::Accept(Visitor* vis) {$/;"	f	class:ConcreteElementB	signature:(Visitor* vis)
+ConcreteElementB::Accept	Element.h	/^    void Accept(Visitor* vis);$/;"	p	class:ConcreteElementB	access:public	signature:(Visitor* vis)
+ConcreteVisitorA	Visitor.h	/^class ConcreteVisitorA :public Visitor {$/;"	c	inherits:Visitor
+ConcreteVisitorA::VisitConcreteElementA	Visitor.cpp	/^void ConcreteVisitorA::VisitConcreteElementA(Element* elm) {$/;"	f	class:ConcreteVisitorA	signature:(Element* elm)
+ConcreteVisitorA::VisitConcreteElementA	Visitor.h	/^    void VisitConcreteElementA(Element* elm);$/;"	p	class:ConcreteVisitorA	access:public	signature:(Element* elm)
+ConcreteVisitorA::VisitConcreteElementB	Visitor.cpp	/^void ConcreteVisitorA::VisitConcreteElementB(Element* elm) {$/;"	f	class:ConcreteVisitorA	signature:(Element* elm)
+ConcreteVisitorA::VisitConcreteElementB	Visitor.h	/^    void VisitConcreteElementB(Element* elm);$/;"	p	class:ConcreteVisitorA	access:public	signature:(Element* elm)
+ConcreteVisitorB	Visitor.h	/^class ConcreteVisitorB :public Visitor {$/;"	c	inherits:Visitor
+ConcreteVisitorB::VisitConcreteElementA	Visitor.cpp	/^void ConcreteVisitorB::VisitConcreteElementA(Element* elm) {$/;"	f	class:ConcreteVisitorB	signature:(Element* elm)
+ConcreteVisitorB::VisitConcreteElementA	Visitor.h	/^    void VisitConcreteElementA(Element* elm);$/;"	p	class:ConcreteVisitorB	access:public	signature:(Element* elm)
+ConcreteVisitorB::VisitConcreteElementB	Visitor.cpp	/^void ConcreteVisitorB::VisitConcreteElementB(Element* elm) {$/;"	f	class:ConcreteVisitorB	signature:(Element* elm)
+ConcreteVisitorB::VisitConcreteElementB	Visitor.h	/^    void VisitConcreteElementB(Element* elm);$/;"	p	class:ConcreteVisitorB	access:public	signature:(Element* elm)
+Element	Element.cpp	/^Element::Element() {$/;"	f	class:Element	signature:()
+Element	Element.h	/^    Element();$/;"	p	class:Element	access:public	signature:()
+Element	Element.h	/^class Element {$/;"	c
+Element::Accept	Element.h	/^    virtual void Accept(Visitor* vis) = 0;$/;"	p	class:Element	access:public	signature:(Visitor* vis)
+Element::Element	Element.cpp	/^Element::Element() {$/;"	f	class:Element	signature:()
+Element::Element	Element.h	/^    Element();$/;"	p	class:Element	access:public	signature:()
+Element::~Element	Element.cpp	/^Element::~Element() {$/;"	f	class:Element	signature:()
+Element::~Element	Element.h	/^    virtual ~Element();$/;"	p	class:Element	access:public	signature:()
+VisitConcreteElementA	Visitor.cpp	/^void ConcreteVisitorA::VisitConcreteElementA(Element* elm) {$/;"	f	class:ConcreteVisitorA	signature:(Element* elm)
+VisitConcreteElementA	Visitor.cpp	/^void ConcreteVisitorB::VisitConcreteElementA(Element* elm) {$/;"	f	class:ConcreteVisitorB	signature:(Element* elm)
+VisitConcreteElementA	Visitor.h	/^    virtual void VisitConcreteElementA(Element* elm) = 0;$/;"	p	class:Visitor	access:public	signature:(Element* elm)
+VisitConcreteElementA	Visitor.h	/^    void VisitConcreteElementA(Element* elm);$/;"	p	class:ConcreteVisitorA	access:public	signature:(Element* elm)
+VisitConcreteElementA	Visitor.h	/^    void VisitConcreteElementA(Element* elm);$/;"	p	class:ConcreteVisitorB	access:public	signature:(Element* elm)
+VisitConcreteElementB	Visitor.cpp	/^void ConcreteVisitorA::VisitConcreteElementB(Element* elm) {$/;"	f	class:ConcreteVisitorA	signature:(Element* elm)
+VisitConcreteElementB	Visitor.cpp	/^void ConcreteVisitorB::VisitConcreteElementB(Element* elm) {$/;"	f	class:ConcreteVisitorB	signature:(Element* elm)
+VisitConcreteElementB	Visitor.h	/^    virtual void VisitConcreteElementB(Element* elm) = 0;$/;"	p	class:Visitor	access:public	signature:(Element* elm)
+VisitConcreteElementB	Visitor.h	/^    void VisitConcreteElementB(Element* elm);$/;"	p	class:ConcreteVisitorA	access:public	signature:(Element* elm)
+VisitConcreteElementB	Visitor.h	/^    void VisitConcreteElementB(Element* elm);$/;"	p	class:ConcreteVisitorB	access:public	signature:(Element* elm)
+Visitor	Visitor.cpp	/^Visitor::Visitor() {$/;"	f	class:Visitor	signature:()
+Visitor	Visitor.h	/^    Visitor();$/;"	p	class:Visitor	access:protected	signature:()
+Visitor	Visitor.h	/^class Visitor {$/;"	c
+Visitor::VisitConcreteElementA	Visitor.h	/^    virtual void VisitConcreteElementA(Element* elm) = 0;$/;"	p	class:Visitor	access:public	signature:(Element* elm)
+Visitor::VisitConcreteElementB	Visitor.h	/^    virtual void VisitConcreteElementB(Element* elm) = 0;$/;"	p	class:Visitor	access:public	signature:(Element* elm)
+Visitor::Visitor	Visitor.cpp	/^Visitor::Visitor() {$/;"	f	class:Visitor	signature:()
+Visitor::Visitor	Visitor.h	/^    Visitor();$/;"	p	class:Visitor	access:protected	signature:()
+Visitor::~Visitor	Visitor.cpp	/^Visitor::~Visitor() {$/;"	f	class:Visitor	signature:()
+Visitor::~Visitor	Visitor.h	/^    virtual ~Visitor();$/;"	p	class:Visitor	access:public	signature:()
+main	VisitorPattern.cpp	/^int main() {$/;"	f	signature:()
+~Element	Element.cpp	/^Element::~Element() {$/;"	f	class:Element	signature:()
+~Element	Element.h	/^    virtual ~Element();$/;"	p	class:Element	access:public	signature:()
+~Visitor	Visitor.cpp	/^Visitor::~Visitor() {$/;"	f	class:Visitor	signature:()
+~Visitor	Visitor.h	/^    virtual ~Visitor();$/;"	p	class:Visitor	access:public	signature:()

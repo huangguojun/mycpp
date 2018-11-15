@@ -1,0 +1,75 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CC	Makefile	/^CC            = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS        = -Wall -Wno-unused-variable  $(DEFINES)$/;"	m
+CXX	Makefile	/^CXX           = g++$/;"	m
+CXXFLAGS	Makefile	/^CXXFLAGS      = -Wall -Wno-unused-variable -std=c++11 $(DEFINES)$/;"	m
+ChangeState	Context.cpp	/^bool Context::ChangeState(State* st)$/;"	f	class:Context	signature:(State* st)
+ChangeState	Context.h	/^    bool ChangeState(State* st);$/;"	p	class:Context	access:private	signature:(State* st)
+ChangeState	State.cpp	/^bool State::ChangeState(Context* con, State *st)$/;"	f	class:State	signature:(Context* con, State *st)
+ChangeState	State.h	/^    bool ChangeState(Context* con, State *st);$/;"	p	class:State	access:protected	signature:(Context* con, State *st)
+ConcreteStateA	State.h	/^class ConcreteStateA :public State$/;"	c	inherits:State
+ConcreteStateA::OperationChangeState	State.cpp	/^void ConcreteStateA::OperationChangeState(Context* con) $/;"	f	class:ConcreteStateA	signature:(Context* con)
+ConcreteStateA::OperationInterface	State.cpp	/^void ConcreteStateA::OperationInterface(Context* con) $/;"	f	class:ConcreteStateA	signature:(Context* con)
+ConcreteStateA::override	State.h	/^    virtual void OperationChangeState(Context* con) override;$/;"	m	class:ConcreteStateA	access:public
+ConcreteStateA::override	State.h	/^    virtual void OperationInterface(Context* con) override;$/;"	m	class:ConcreteStateA	access:public
+ConcreteStateB	State.h	/^class ConcreteStateB :public State$/;"	c	inherits:State
+ConcreteStateB::OperationChangeState	State.cpp	/^void ConcreteStateB::OperationChangeState(Context* con) $/;"	f	class:ConcreteStateB	signature:(Context* con)
+ConcreteStateB::OperationInterface	State.cpp	/^void ConcreteStateB::OperationInterface(Context* con) $/;"	f	class:ConcreteStateB	signature:(Context* con)
+ConcreteStateB::override	State.h	/^    void OperationChangeState(Context* con) override;$/;"	m	class:ConcreteStateB	access:public
+ConcreteStateB::override	State.h	/^    void OperationInterface(Context* con) override;$/;"	m	class:ConcreteStateB	access:public
+Context	Context.cpp	/^Context::Context(State* st) $/;"	f	class:Context	signature:(State* st)
+Context	Context.h	/^    Context(State* st);$/;"	p	class:Context	access:public	signature:(State* st)
+Context	Context.h	/^class Context $/;"	c
+Context::ChangeState	Context.cpp	/^bool Context::ChangeState(State* st)$/;"	f	class:Context	signature:(State* st)
+Context::ChangeState	Context.h	/^    bool ChangeState(State* st);$/;"	p	class:Context	access:private	signature:(State* st)
+Context::Context	Context.cpp	/^Context::Context(State* st) $/;"	f	class:Context	signature:(State* st)
+Context::Context	Context.h	/^    Context(State* st);$/;"	p	class:Context	access:public	signature:(State* st)
+Context::OperationChangeState	Context.cpp	/^void Context::OperationChangeState() $/;"	f	class:Context	signature:()
+Context::OperationChangeState	Context.h	/^    void OperationChangeState() ;$/;"	p	class:Context	access:public	signature:()
+Context::OperationInterface	Context.cpp	/^void Context::OperationInterface() $/;"	f	class:Context	signature:()
+Context::OperationInterface	Context.h	/^    void OperationInterface();$/;"	p	class:Context	access:public	signature:()
+Context::_st	Context.h	/^    State *_st;$/;"	m	class:Context	access:private
+DEFINES	Makefile	/^DEFINES       = $/;"	m
+DISTDIR	Makefile	/^DISTDIR 	  = $/;"	m
+INCPATH	Makefile	/^INCPATH       = -I\/usr\/include\/ -I\/usr\/local\/include$/;"	m
+LFLAGS	Makefile	/^LFLAGS        = -m64 -Wl,-O1$/;"	m
+LIBS	Makefile	/^LIBS          = $/;"	m
+LINK	Makefile	/^LINK          = g++$/;"	m
+OBJECTS	Makefile	/^OBJECTS       = $(patsubst %.cpp,%.o,$(SOURCES)) $/;"	m
+OBJECTS_DIR	Makefile	/^OBJECTS_DIR   = .\/$/;"	m
+OperationChangeState	Context.cpp	/^void Context::OperationChangeState() $/;"	f	class:Context	signature:()
+OperationChangeState	Context.h	/^    void OperationChangeState() ;$/;"	p	class:Context	access:public	signature:()
+OperationChangeState	State.cpp	/^void ConcreteStateA::OperationChangeState(Context* con) $/;"	f	class:ConcreteStateA	signature:(Context* con)
+OperationChangeState	State.cpp	/^void ConcreteStateB::OperationChangeState(Context* con) $/;"	f	class:ConcreteStateB	signature:(Context* con)
+OperationChangeState	State.h	/^    virtual void OperationChangeState(Context*) = 0;$/;"	p	class:State	access:public	signature:(Context*)
+OperationInterface	Context.cpp	/^void Context::OperationInterface() $/;"	f	class:Context	signature:()
+OperationInterface	Context.h	/^    void OperationInterface();$/;"	p	class:Context	access:public	signature:()
+OperationInterface	State.cpp	/^void ConcreteStateA::OperationInterface(Context* con) $/;"	f	class:ConcreteStateA	signature:(Context* con)
+OperationInterface	State.cpp	/^void ConcreteStateB::OperationInterface(Context* con) $/;"	f	class:ConcreteStateB	signature:(Context* con)
+OperationInterface	State.h	/^    virtual void OperationInterface(Context*) = 0;$/;"	p	class:State	access:public	signature:(Context*)
+SOURCES	Makefile	/^SOURCES       = main.cpp \\$/;"	m
+State	State.cpp	/^State::State()$/;"	f	class:State	signature:()
+State	State.h	/^	State();$/;"	p	class:State	access:public	signature:()
+State	State.h	/^class State$/;"	c
+State::ChangeState	State.cpp	/^bool State::ChangeState(Context* con, State *st)$/;"	f	class:State	signature:(Context* con, State *st)
+State::ChangeState	State.h	/^    bool ChangeState(Context* con, State *st);$/;"	p	class:State	access:protected	signature:(Context* con, State *st)
+State::OperationChangeState	State.h	/^    virtual void OperationChangeState(Context*) = 0;$/;"	p	class:State	access:public	signature:(Context*)
+State::OperationInterface	State.h	/^    virtual void OperationInterface(Context*) = 0;$/;"	p	class:State	access:public	signature:(Context*)
+State::State	State.cpp	/^State::State()$/;"	f	class:State	signature:()
+State::State	State.h	/^	State();$/;"	p	class:State	access:public	signature:()
+State::~State	State.cpp	/^State::~State()$/;"	f	class:State	signature:()
+State::~State	State.h	/^    virtual ~State(); $/;"	p	class:State	access:public	signature:()
+TARGET	Makefile	/^TARGET        = a.out$/;"	m
+_st	Context.h	/^    State *_st;$/;"	m	class:Context	access:private
+main	main.cpp	/^int main() {$/;"	f	signature:()
+override	State.h	/^    virtual void OperationChangeState(Context* con) override;$/;"	m	class:ConcreteStateA	access:public
+override	State.h	/^    virtual void OperationInterface(Context* con) override;$/;"	m	class:ConcreteStateA	access:public
+override	State.h	/^    void OperationChangeState(Context* con) override;$/;"	m	class:ConcreteStateB	access:public
+override	State.h	/^    void OperationInterface(Context* con) override;$/;"	m	class:ConcreteStateB	access:public
+~State	State.cpp	/^State::~State()$/;"	f	class:State	signature:()
+~State	State.h	/^    virtual ~State(); $/;"	p	class:State	access:public	signature:()

@@ -1,0 +1,517 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+APPLICATIONFACADE_H	ApplicationFacade.h	2;"	d
+ApplicationFacade	ApplicationFacade.cpp	/^ApplicationFacade::ApplicationFacade() : Facade()$/;"	f	class:ApplicationFacade	signature:()
+ApplicationFacade	ApplicationFacade.h	/^    ApplicationFacade();$/;"	p	class:ApplicationFacade	access:public	signature:()
+ApplicationFacade	ApplicationFacade.h	/^class ApplicationFacade : public Facade$/;"	c	inherits:Facade
+ApplicationFacade::ApplicationFacade	ApplicationFacade.cpp	/^ApplicationFacade::ApplicationFacade() : Facade()$/;"	f	class:ApplicationFacade	signature:()
+ApplicationFacade::ApplicationFacade	ApplicationFacade.h	/^    ApplicationFacade();$/;"	p	class:ApplicationFacade	access:public	signature:()
+ApplicationFacade::initializeCommand	ApplicationFacade.cpp	/^void ApplicationFacade::initializeCommand()$/;"	f	class:ApplicationFacade	signature:()
+ApplicationFacade::initializeCommand	ApplicationFacade.h	/^    void initializeCommand();$/;"	p	class:ApplicationFacade	access:protected	signature:()
+ApplicationFacade::initializeMediator	ApplicationFacade.cpp	/^void ApplicationFacade::initializeMediator()$/;"	f	class:ApplicationFacade	signature:()
+ApplicationFacade::initializeMediator	ApplicationFacade.h	/^    void initializeMediator();$/;"	p	class:ApplicationFacade	access:protected	signature:()
+ApplicationFacade::initializeProxy	ApplicationFacade.cpp	/^void ApplicationFacade::initializeProxy()$/;"	f	class:ApplicationFacade	signature:()
+ApplicationFacade::initializeProxy	ApplicationFacade.h	/^    void initializeProxy();$/;"	p	class:ApplicationFacade	access:protected	signature:()
+COMMAND_H	Patterns/Command.h	2;"	d
+CONTROLLER_H	Core/Controller.h	2;"	d
+Command	Patterns/Command.h	/^class Command : public ICommand, public IObserver$/;"	c	inherits:ICommand,IObserver
+Command::excute	Patterns/Command.cpp	/^void Command::excute(INotification *notification)$/;"	f	class:Command	signature:(INotification *notification)
+Command::excute	Patterns/Command.h	/^    virtual void excute(INotification *notification);$/;"	p	class:Command	access:public	signature:(INotification *notification)
+Command::notifyObserver	Patterns/Command.cpp	/^void Command::notifyObserver(INotification *notification)$/;"	f	class:Command	signature:(INotification *notification)
+Command::notifyObserver	Patterns/Command.h	/^    void notifyObserver(INotification *notification);$/;"	p	class:Command	access:public	signature:(INotification *notification)
+Controller	Core/Controller.cpp	/^Controller::Controller()$/;"	f	class:Controller	signature:()
+Controller	Core/Controller.h	/^    Controller();$/;"	p	class:Controller	access:private	signature:()
+Controller	Core/Controller.h	/^class Controller : public IController$/;"	c	inherits:IController
+Controller::Controller	Core/Controller.cpp	/^Controller::Controller()$/;"	f	class:Controller	signature:()
+Controller::Controller	Core/Controller.h	/^    Controller();$/;"	p	class:Controller	access:private	signature:()
+Controller::excuteCommand	Core/Controller.cpp	/^void Controller::excuteCommand(INotification *notification)$/;"	f	class:Controller	signature:(INotification *notification)
+Controller::excuteCommand	Core/Controller.h	/^    void excuteCommand(INotification *notification);$/;"	p	class:Controller	access:public	signature:(INotification *notification)
+Controller::getInstance	Core/Controller.cpp	/^Controller *Controller::getInstance()$/;"	f	class:Controller	signature:()
+Controller::getInstance	Core/Controller.h	/^    static Controller *getInstance();$/;"	p	class:Controller	access:public	signature:()
+Controller::hasCommand	Core/Controller.cpp	/^bool Controller::hasCommand(const QString &notificationName)$/;"	f	class:Controller	signature:(const QString &notificationName)
+Controller::hasCommand	Core/Controller.h	/^    bool hasCommand(const QString &notificationName);$/;"	p	class:Controller	access:public	signature:(const QString &notificationName)
+Controller::m_commandMap	Core/Controller.h	/^    QMap<QString, ICommand *> m_commandMap;$/;"	m	class:Controller	access:private
+Controller::m_instance	Core/Controller.cpp	/^Controller *Controller::m_instance;$/;"	m	class:Controller	file:
+Controller::m_instance	Core/Controller.h	/^    static Controller *m_instance;$/;"	m	class:Controller	access:private
+Controller::m_view	Core/Controller.h	/^    IView *m_view;$/;"	m	class:Controller	access:private
+Controller::registerCommand	Core/Controller.cpp	/^void Controller::registerCommand(const QString &notificationName, ICommand *command)$/;"	f	class:Controller	signature:(const QString &notificationName, ICommand *command)
+Controller::registerCommand	Core/Controller.h	/^    void registerCommand(const QString &notificationName, ICommand *command);$/;"	p	class:Controller	access:public	signature:(const QString &notificationName, ICommand *command)
+Controller::removeCommand	Core/Controller.cpp	/^void Controller::removeCommand(const QString &notificationName)$/;"	f	class:Controller	signature:(const QString &notificationName)
+Controller::removeCommand	Core/Controller.h	/^    void removeCommand(const QString &notificationName);$/;"	p	class:Controller	access:public	signature:(const QString &notificationName)
+Dialog	LoginForm.cpp	/^Dialog::Dialog(QWidget *parent) :$/;"	f	class:Dialog	signature:(QWidget *parent)
+Dialog	LoginForm.h	/^    Dialog(QWidget *parent = 0);$/;"	p	class:Dialog	access:public	signature:(QWidget *parent = 0)
+Dialog	LoginForm.h	/^class Dialog : public QDialog, public IViewComponent {$/;"	c	inherits:QDialog,IViewComponent
+Dialog	ui_login_dialog.h	/^    class Dialog: public Ui_Dialog {};$/;"	c	namespace:Ui	inherits:Ui_Dialog
+Dialog::Dialog	LoginForm.cpp	/^Dialog::Dialog(QWidget *parent) :$/;"	f	class:Dialog	signature:(QWidget *parent)
+Dialog::Dialog	LoginForm.h	/^    Dialog(QWidget *parent = 0);$/;"	p	class:Dialog	access:public	signature:(QWidget *parent = 0)
+Dialog::changeEvent	LoginForm.cpp	/^void Dialog::changeEvent(QEvent *e)$/;"	f	class:Dialog	signature:(QEvent *e)
+Dialog::changeEvent	LoginForm.h	/^    void changeEvent(QEvent *e);$/;"	p	class:Dialog	access:protected	signature:(QEvent *e)
+Dialog::loginMediator	LoginForm.h	/^    LoginMediator *loginMediator;$/;"	m	class:Dialog	access:private
+Dialog::on_loginButton_clicked	LoginForm.cpp	/^void Dialog::on_loginButton_clicked()$/;"	f	class:Dialog	signature:()
+Dialog::on_loginButton_clicked	LoginForm.h	/^    void on_loginButton_clicked();$/;"	p	class:Dialog	access:private	signature:()
+Dialog::ui	LoginForm.h	/^    Ui::Dialog *ui;$/;"	m	class:Dialog	access:private
+Dialog::update	LoginForm.cpp	/^void Dialog::update(IUpdateData *updateData)$/;"	f	class:Dialog	signature:(IUpdateData *updateData)
+Dialog::update	LoginForm.h	/^    void update(IUpdateData *updateData);$/;"	p	class:Dialog	access:public	signature:(IUpdateData *updateData)
+Dialog::~Dialog	LoginForm.cpp	/^Dialog::~Dialog()$/;"	f	class:Dialog	signature:()
+Dialog::~Dialog	LoginForm.h	/^    ~Dialog();$/;"	p	class:Dialog	access:public	signature:()
+FACADE_H	Patterns/Facade.h	2;"	d
+Facade	Patterns/Facade.cpp	/^Facade::Facade()$/;"	f	class:Facade	signature:()
+Facade	Patterns/Facade.h	/^    Facade();$/;"	p	class:Facade	access:protected	signature:()
+Facade	Patterns/Facade.h	/^class Facade : public IFacade$/;"	c	inherits:IFacade
+Facade::Facade	Patterns/Facade.cpp	/^Facade::Facade()$/;"	f	class:Facade	signature:()
+Facade::Facade	Patterns/Facade.h	/^    Facade();$/;"	p	class:Facade	access:protected	signature:()
+Facade::getInstance	Patterns/Facade.cpp	/^Facade *Facade::getInstance()$/;"	f	class:Facade	signature:()
+Facade::getInstance	Patterns/Facade.h	/^    static Facade *getInstance();$/;"	p	class:Facade	access:public	signature:()
+Facade::hasCommand	Patterns/Facade.cpp	/^bool Facade::hasCommand(const QString &notificationName)$/;"	f	class:Facade	signature:(const QString &notificationName)
+Facade::hasCommand	Patterns/Facade.h	/^    bool hasCommand(const QString &notificationName);$/;"	p	class:Facade	access:public	signature:(const QString &notificationName)
+Facade::hasMediator	Patterns/Facade.cpp	/^bool Facade::hasMediator(const QString &mediatorName)$/;"	f	class:Facade	signature:(const QString &mediatorName)
+Facade::hasMediator	Patterns/Facade.h	/^    bool hasMediator(const QString &mediatorName);$/;"	p	class:Facade	access:public	signature:(const QString &mediatorName)
+Facade::hasProxy	Patterns/Facade.cpp	/^bool Facade::hasProxy(const QString &proxyName)$/;"	f	class:Facade	signature:(const QString &proxyName)
+Facade::hasProxy	Patterns/Facade.h	/^    bool hasProxy(const QString &proxyName);$/;"	p	class:Facade	access:public	signature:(const QString &proxyName)
+Facade::initializeCommand	Patterns/Facade.cpp	/^void Facade::initializeCommand()$/;"	f	class:Facade	signature:()
+Facade::initializeCommand	Patterns/Facade.h	/^    virtual void initializeCommand();$/;"	p	class:Facade	access:protected	signature:()
+Facade::initializeMediator	Patterns/Facade.cpp	/^void Facade::initializeMediator()$/;"	f	class:Facade	signature:()
+Facade::initializeMediator	Patterns/Facade.h	/^    virtual void initializeMediator();$/;"	p	class:Facade	access:protected	signature:()
+Facade::initializeProxy	Patterns/Facade.cpp	/^void Facade::initializeProxy()$/;"	f	class:Facade	signature:()
+Facade::initializeProxy	Patterns/Facade.h	/^    virtual void initializeProxy();$/;"	p	class:Facade	access:protected	signature:()
+Facade::m_controller	Patterns/Facade.h	/^    IController *m_controller;$/;"	m	class:Facade	access:private
+Facade::m_instance	Patterns/Facade.cpp	/^Facade *Facade::m_instance;$/;"	m	class:Facade	file:
+Facade::m_instance	Patterns/Facade.h	/^    static Facade *m_instance;$/;"	m	class:Facade	access:private
+Facade::m_model	Patterns/Facade.h	/^    IModel *m_model;$/;"	m	class:Facade	access:private
+Facade::m_view	Patterns/Facade.h	/^    IView *m_view;$/;"	m	class:Facade	access:private
+Facade::notifyObservers	Patterns/Facade.cpp	/^void Facade::notifyObservers(INotification *notification)$/;"	f	class:Facade	signature:(INotification *notification)
+Facade::notifyObservers	Patterns/Facade.h	/^    void notifyObservers(INotification *notification);$/;"	p	class:Facade	access:public	signature:(INotification *notification)
+Facade::registerCommand	Patterns/Facade.cpp	/^void Facade::registerCommand(const QString &notificationName, ICommand *command)$/;"	f	class:Facade	signature:(const QString &notificationName, ICommand *command)
+Facade::registerCommand	Patterns/Facade.h	/^    void registerCommand(const QString &notificationName, ICommand *command);$/;"	p	class:Facade	access:public	signature:(const QString &notificationName, ICommand *command)
+Facade::registerMediator	Patterns/Facade.cpp	/^void Facade::registerMediator(IMediator *mediator)$/;"	f	class:Facade	signature:(IMediator *mediator)
+Facade::registerMediator	Patterns/Facade.h	/^    void registerMediator(IMediator *mediator);$/;"	p	class:Facade	access:public	signature:(IMediator *mediator)
+Facade::registerObserver	Patterns/Facade.cpp	/^void Facade::registerObserver(IObserver *observer, const QString &notificationName)$/;"	f	class:Facade	signature:(IObserver *observer, const QString &notificationName)
+Facade::registerObserver	Patterns/Facade.h	/^    void registerObserver(IObserver *observer, const QString &notificationName);$/;"	p	class:Facade	access:public	signature:(IObserver *observer, const QString &notificationName)
+Facade::registerProxy	Patterns/Facade.cpp	/^void Facade::registerProxy(IProxy *proxy)$/;"	f	class:Facade	signature:(IProxy *proxy)
+Facade::registerProxy	Patterns/Facade.h	/^    void registerProxy(IProxy *proxy);$/;"	p	class:Facade	access:public	signature:(IProxy *proxy)
+Facade::removeCommand	Patterns/Facade.cpp	/^void Facade::removeCommand(const QString &notificationName)$/;"	f	class:Facade	signature:(const QString &notificationName)
+Facade::removeCommand	Patterns/Facade.h	/^    void removeCommand(const QString &notificationName);$/;"	p	class:Facade	access:public	signature:(const QString &notificationName)
+Facade::removeMediator	Patterns/Facade.cpp	/^void Facade::removeMediator(const QString &mediatorName)$/;"	f	class:Facade	signature:(const QString &mediatorName)
+Facade::removeMediator	Patterns/Facade.h	/^    void removeMediator(const QString &mediatorName);$/;"	p	class:Facade	access:public	signature:(const QString &mediatorName)
+Facade::removeObserver	Patterns/Facade.cpp	/^void Facade::removeObserver(const QString &notificationName)$/;"	f	class:Facade	signature:(const QString &notificationName)
+Facade::removeObserver	Patterns/Facade.h	/^    void removeObserver(const QString &notificationName);$/;"	p	class:Facade	access:public	signature:(const QString &notificationName)
+Facade::removeProxy	Patterns/Facade.cpp	/^void Facade::removeProxy(const QString &proxyName)$/;"	f	class:Facade	signature:(const QString &proxyName)
+Facade::removeProxy	Patterns/Facade.h	/^    void removeProxy(const QString &proxyName);$/;"	p	class:Facade	access:public	signature:(const QString &proxyName)
+Facade::retrieveMediator	Patterns/Facade.cpp	/^IMediator *Facade::retrieveMediator(const QString &mediatorName)$/;"	f	class:Facade	signature:(const QString &mediatorName)
+Facade::retrieveMediator	Patterns/Facade.h	/^    IMediator *retrieveMediator(const QString &mediatorName);$/;"	p	class:Facade	access:public	signature:(const QString &mediatorName)
+Facade::retrieveProxy	Patterns/Facade.cpp	/^IProxy *Facade::retrieveProxy(const QString &proxyName)$/;"	f	class:Facade	signature:(const QString &proxyName)
+Facade::retrieveProxy	Patterns/Facade.h	/^    IProxy *retrieveProxy(const QString &proxyName);$/;"	p	class:Facade	access:public	signature:(const QString &proxyName)
+Facade::sendNotification	Patterns/Facade.cpp	/^void Facade::sendNotification(const QString &notificationName, void *body)$/;"	f	class:Facade	signature:(const QString &notificationName, void *body)
+Facade::sendNotification	Patterns/Facade.h	/^    void sendNotification(const QString &notificationName, void *body);$/;"	p	class:Facade	access:public	signature:(const QString &notificationName, void *body)
+Facade::startUp	Patterns/Facade.cpp	/^void Facade::startUp()$/;"	f	class:Facade	signature:()
+Facade::startUp	Patterns/Facade.h	/^    void startUp();$/;"	p	class:Facade	access:public	signature:()
+ICOMMAND_H	Interface/ICommand.h	2;"	d
+ICONTROLLER_H	Interface/IController.h	2;"	d
+ICommand	Interface/ICommand.h	/^class ICommand$/;"	c
+ICommand::excute	Interface/ICommand.h	/^    virtual void excute(INotification *notification) = 0;$/;"	p	class:ICommand	access:public	signature:(INotification *notification)
+IController	Interface/IController.h	/^class IController$/;"	c
+IController::excuteCommand	Interface/IController.h	/^    virtual void excuteCommand(INotification *notification) = 0;$/;"	p	class:IController	access:public	signature:(INotification *notification)
+IController::hasCommand	Interface/IController.h	/^    virtual bool hasCommand(const QString &notificationName) = 0;$/;"	p	class:IController	access:public	signature:(const QString &notificationName)
+IController::registerCommand	Interface/IController.h	/^    virtual void registerCommand(const QString &notificationName, ICommand *command) = 0;$/;"	p	class:IController	access:public	signature:(const QString &notificationName, ICommand *command)
+IController::removeCommand	Interface/IController.h	/^    virtual void removeCommand(const QString &notificationName) = 0;$/;"	p	class:IController	access:public	signature:(const QString &notificationName)
+IFACADE_H	Interface/IFacade.h	2;"	d
+IFacade	Interface/IFacade.h	/^class IFacade : public INotifier$/;"	c	inherits:INotifier
+IFacade::hasCommand	Interface/IFacade.h	/^    virtual bool hasCommand(const QString &notificationName) = 0;$/;"	p	class:IFacade	access:public	signature:(const QString &notificationName)
+IFacade::hasMediator	Interface/IFacade.h	/^    virtual bool hasMediator(const QString &mediatorName) = 0;$/;"	p	class:IFacade	access:public	signature:(const QString &mediatorName)
+IFacade::hasProxy	Interface/IFacade.h	/^    virtual bool hasProxy(const QString &proxyName) = 0;$/;"	p	class:IFacade	access:public	signature:(const QString &proxyName)
+IFacade::notifyObservers	Interface/IFacade.h	/^    virtual void notifyObservers(INotification *notification) = 0;$/;"	p	class:IFacade	access:public	signature:(INotification *notification)
+IFacade::registerCommand	Interface/IFacade.h	/^    virtual void registerCommand(const QString &notificationName, ICommand *command) = 0;$/;"	p	class:IFacade	access:public	signature:(const QString &notificationName, ICommand *command)
+IFacade::registerMediator	Interface/IFacade.h	/^    virtual void registerMediator(IMediator *mediator) = 0;$/;"	p	class:IFacade	access:public	signature:(IMediator *mediator)
+IFacade::registerObserver	Interface/IFacade.h	/^    virtual void registerObserver(IObserver *observer, const QString &notificationName) = 0;$/;"	p	class:IFacade	access:public	signature:(IObserver *observer, const QString &notificationName)
+IFacade::registerProxy	Interface/IFacade.h	/^    virtual void registerProxy(IProxy *proxy) = 0;$/;"	p	class:IFacade	access:public	signature:(IProxy *proxy)
+IFacade::removeCommand	Interface/IFacade.h	/^    virtual void removeCommand(const QString &notificationName) = 0;$/;"	p	class:IFacade	access:public	signature:(const QString &notificationName)
+IFacade::removeMediator	Interface/IFacade.h	/^    virtual void removeMediator(const QString &mediatorName) = 0;$/;"	p	class:IFacade	access:public	signature:(const QString &mediatorName)
+IFacade::removeObserver	Interface/IFacade.h	/^    virtual void removeObserver(const QString &notificationName) = 0;$/;"	p	class:IFacade	access:public	signature:(const QString &notificationName)
+IFacade::removeProxy	Interface/IFacade.h	/^    virtual void removeProxy(const QString &proxyName) = 0;$/;"	p	class:IFacade	access:public	signature:(const QString &proxyName)
+IFacade::retrieveMediator	Interface/IFacade.h	/^    virtual IMediator *retrieveMediator(const QString &mediatorName) = 0;$/;"	p	class:IFacade	access:public	signature:(const QString &mediatorName)
+IFacade::retrieveProxy	Interface/IFacade.h	/^    virtual IProxy *retrieveProxy(const QString &proxyName) = 0;$/;"	p	class:IFacade	access:public	signature:(const QString &proxyName)
+IMEDIATOR_H	Interface/IMediator.h	2;"	d
+IMODEL_H	Interface/IModel.h	2;"	d
+IMediator	Interface/IMediator.h	/^class IMediator$/;"	c
+IMediator::getListNotificationInterests	Interface/IMediator.h	/^    virtual QList<QString> getListNotificationInterests() = 0;$/;"	p	class:IMediator	access:public	signature:()
+IMediator::getMediatorName	Interface/IMediator.h	/^    virtual QString getMediatorName() = 0;$/;"	p	class:IMediator	access:public	signature:()
+IMediator::handleNotification	Interface/IMediator.h	/^    virtual void handleNotification(INotification *notification) = 0;$/;"	p	class:IMediator	access:public	signature:(INotification *notification)
+IMediator::registerViewComponent	Interface/IMediator.h	/^    virtual void registerViewComponent(IViewComponent *viewComponent) = 0;$/;"	p	class:IMediator	access:public	signature:(IViewComponent *viewComponent)
+IModel	Interface/IModel.h	/^class IModel$/;"	c
+IModel::hasProxy	Interface/IModel.h	/^    virtual bool hasProxy(const QString &proxyName) = 0;$/;"	p	class:IModel	access:public	signature:(const QString &proxyName)
+IModel::registerProxy	Interface/IModel.h	/^    virtual void registerProxy(IProxy *proxy) = 0;$/;"	p	class:IModel	access:public	signature:(IProxy *proxy)
+IModel::removeProxy	Interface/IModel.h	/^    virtual void removeProxy(const QString &proxyName) = 0;$/;"	p	class:IModel	access:public	signature:(const QString &proxyName)
+IModel::retrieveProxy	Interface/IModel.h	/^    virtual IProxy *retrieveProxy(const QString &proxyName) = 0;$/;"	p	class:IModel	access:public	signature:(const QString &proxyName)
+INOTIFICATION_H	Interface/INotification.h	2;"	d
+INOTIFIER_H	Interface/INotifier.h	2;"	d
+INotification	Interface/INotification.h	/^class INotification$/;"	c
+INotification::getBody	Interface/INotification.h	/^    virtual void *getBody() = 0;$/;"	p	class:INotification	access:public	signature:()
+INotification::getNotificationName	Interface/INotification.h	/^    virtual QString getNotificationName() = 0;$/;"	p	class:INotification	access:public	signature:()
+INotifier	Interface/INotifier.h	/^class INotifier$/;"	c
+INotifier::sendNotification	Interface/INotifier.h	/^    virtual void sendNotification(const QString &notificationName, void *body) = 0;$/;"	p	class:INotifier	access:public	signature:(const QString &notificationName, void *body)
+IOBSERVER_H	Interface/IObserver.h	2;"	d
+IObserver	Interface/IObserver.h	/^class IObserver$/;"	c
+IObserver::notifyObserver	Interface/IObserver.h	/^    virtual void notifyObserver(INotification *notification) = 0;$/;"	p	class:IObserver	access:public	signature:(INotification *notification)
+IPROXY_H	Interface/IProxy.h	2;"	d
+IProxy	Interface/IProxy.h	/^class IProxy$/;"	c
+IProxy::getProxyName	Interface/IProxy.h	/^    virtual QString getProxyName() = 0;$/;"	p	class:IProxy	access:public	signature:()
+IUPDATEDATA_H	Interface/IUpdateData.h	2;"	d
+IUpdateData	Interface/IUpdateData.h	/^class IUpdateData : public QObject$/;"	c	inherits:QObject
+IUpdateData::getName	Interface/IUpdateData.h	/^    virtual QString getName() const = 0;$/;"	p	class:IUpdateData	access:public	signature:() const
+IVIEWCOMPONENT_H	Interface/IViewComponent.h	2;"	d
+IVIEW_H	Interface/IView.h	2;"	d
+IView	Interface/IView.h	/^class IView$/;"	c
+IView::hasMediator	Interface/IView.h	/^    virtual bool hasMediator(const QString &mediatorName) = 0;$/;"	p	class:IView	access:public	signature:(const QString &mediatorName)
+IView::notifyObservers	Interface/IView.h	/^    virtual void notifyObservers(INotification *notification) = 0;$/;"	p	class:IView	access:public	signature:(INotification *notification)
+IView::registerMediator	Interface/IView.h	/^    virtual void registerMediator(IMediator *mediator) = 0;$/;"	p	class:IView	access:public	signature:(IMediator *mediator)
+IView::registerObserver	Interface/IView.h	/^    virtual void registerObserver(IObserver *observer, const QString &notificationName) = 0;$/;"	p	class:IView	access:public	signature:(IObserver *observer, const QString &notificationName)
+IView::removeMediator	Interface/IView.h	/^    virtual void removeMediator(const QString &mediatorName) = 0;$/;"	p	class:IView	access:public	signature:(const QString &mediatorName)
+IView::removeObserver	Interface/IView.h	/^    virtual void removeObserver(const QString &notificationName) = 0;$/;"	p	class:IView	access:public	signature:(const QString &notificationName)
+IView::retrieveMediator	Interface/IView.h	/^    virtual IMediator *retrieveMediator(const QString &mediatorName) = 0;$/;"	p	class:IView	access:public	signature:(const QString &mediatorName)
+IViewComponent	Interface/IViewComponent.h	/^class IViewComponent$/;"	c
+IViewComponent::update	Interface/IViewComponent.h	/^    virtual void update(IUpdateData *updateData) = 0;$/;"	p	class:IViewComponent	access:public	signature:(IUpdateData *updateData)
+LOGINCOMMAND_H	LoginCommand.h	2;"	d
+LOGINFORM_H	LoginForm.h	2;"	d
+LOGININFO_H	LoginInfo.h	2;"	d
+LOGINMEDIATOR_H	LoginMediator.h	2;"	d
+LOGINPROXY_H	LoginProxy.h	2;"	d
+LOGINRESULT_H	LoginResult.h	2;"	d
+LoginCommand	LoginCommand.cpp	/^LoginCommand::LoginCommand()$/;"	f	class:LoginCommand	signature:()
+LoginCommand	LoginCommand.h	/^    LoginCommand();$/;"	p	class:LoginCommand	access:public	signature:()
+LoginCommand	LoginCommand.h	/^class LoginCommand : public Command$/;"	c	inherits:Command
+LoginCommand::LoginCommand	LoginCommand.cpp	/^LoginCommand::LoginCommand()$/;"	f	class:LoginCommand	signature:()
+LoginCommand::LoginCommand	LoginCommand.h	/^    LoginCommand();$/;"	p	class:LoginCommand	access:public	signature:()
+LoginCommand::excute	LoginCommand.cpp	/^void LoginCommand::excute(INotification *notification)$/;"	f	class:LoginCommand	signature:(INotification *notification)
+LoginCommand::excute	LoginCommand.h	/^    void excute(INotification *notification);$/;"	p	class:LoginCommand	access:public	signature:(INotification *notification)
+LoginInfo	LoginInfo.cpp	/^LoginInfo::LoginInfo()$/;"	f	class:LoginInfo	signature:()
+LoginInfo	LoginInfo.h	/^    LoginInfo();$/;"	p	class:LoginInfo	access:public	signature:()
+LoginInfo	LoginInfo.h	/^class LoginInfo$/;"	c
+LoginInfo::LoginInfo	LoginInfo.cpp	/^LoginInfo::LoginInfo()$/;"	f	class:LoginInfo	signature:()
+LoginInfo::LoginInfo	LoginInfo.h	/^    LoginInfo();$/;"	p	class:LoginInfo	access:public	signature:()
+LoginInfo::name	LoginInfo.h	/^    QString name;$/;"	m	class:LoginInfo	access:public
+LoginInfo::password	LoginInfo.h	/^    QString password;$/;"	m	class:LoginInfo	access:public
+LoginMediator	LoginMediator.cpp	/^LoginMediator::LoginMediator()$/;"	f	class:LoginMediator	signature:()
+LoginMediator	LoginMediator.h	/^    LoginMediator();$/;"	p	class:LoginMediator	access:public	signature:()
+LoginMediator	LoginMediator.h	/^class LoginMediator : public Mediator$/;"	c	inherits:Mediator
+LoginMediator::LoginMediator	LoginMediator.cpp	/^LoginMediator::LoginMediator()$/;"	f	class:LoginMediator	signature:()
+LoginMediator::LoginMediator	LoginMediator.h	/^    LoginMediator();$/;"	p	class:LoginMediator	access:public	signature:()
+LoginMediator::doLogin	LoginMediator.cpp	/^void LoginMediator::doLogin(LoginInfo *loginInfo)$/;"	f	class:LoginMediator	signature:(LoginInfo *loginInfo)
+LoginMediator::doLogin	LoginMediator.h	/^    void doLogin(LoginInfo *loginInfo);$/;"	p	class:LoginMediator	access:public	signature:(LoginInfo *loginInfo)
+LoginMediator::getListNotificationInterests	LoginMediator.cpp	/^QList<QString> LoginMediator::getListNotificationInterests()$/;"	f	class:LoginMediator	signature:()
+LoginMediator::getListNotificationInterests	LoginMediator.h	/^    QList<QString> getListNotificationInterests();$/;"	p	class:LoginMediator	access:public	signature:()
+LoginMediator::handleNotification	LoginMediator.cpp	/^void LoginMediator::handleNotification(INotification *notification)$/;"	f	class:LoginMediator	signature:(INotification *notification)
+LoginMediator::handleNotification	LoginMediator.h	/^    void handleNotification(INotification *notification);$/;"	p	class:LoginMediator	access:public	signature:(INotification *notification)
+LoginMediator::m_notificationInterests	LoginMediator.h	/^    QList<QString> m_notificationInterests;$/;"	m	class:LoginMediator	access:private
+LoginProxy	LoginProxy.cpp	/^LoginProxy::LoginProxy()$/;"	f	class:LoginProxy	signature:()
+LoginProxy	LoginProxy.h	/^    LoginProxy();$/;"	p	class:LoginProxy	access:public	signature:()
+LoginProxy	LoginProxy.h	/^class LoginProxy : public Proxy$/;"	c	inherits:Proxy
+LoginProxy::LoginProxy	LoginProxy.cpp	/^LoginProxy::LoginProxy()$/;"	f	class:LoginProxy	signature:()
+LoginProxy::LoginProxy	LoginProxy.h	/^    LoginProxy();$/;"	p	class:LoginProxy	access:public	signature:()
+LoginProxy::checkLogin	LoginProxy.cpp	/^void LoginProxy::checkLogin(LoginInfo *loginInfo)$/;"	f	class:LoginProxy	signature:(LoginInfo *loginInfo)
+LoginProxy::checkLogin	LoginProxy.h	/^    void checkLogin(LoginInfo *loginInfo);$/;"	p	class:LoginProxy	access:public	signature:(LoginInfo *loginInfo)
+LoginResult	LoginResult.cpp	/^LoginResult::LoginResult()$/;"	f	class:LoginResult	signature:()
+LoginResult	LoginResult.h	/^    LoginResult();$/;"	p	class:LoginResult	access:public	signature:()
+LoginResult	LoginResult.h	/^class LoginResult : public UpdateData$/;"	c	inherits:UpdateData
+LoginResult::LoginResult	LoginResult.cpp	/^LoginResult::LoginResult()$/;"	f	class:LoginResult	signature:()
+LoginResult::LoginResult	LoginResult.h	/^    LoginResult();$/;"	p	class:LoginResult	access:public	signature:()
+LoginResult::result	LoginResult.h	/^    bool result;$/;"	m	class:LoginResult	access:public
+MEDIATOR_H	Patterns/Mediator.h	2;"	d
+MEDIATOR_NAME	Patterns/Mediator.cpp	/^QString Mediator::MEDIATOR_NAME = "Mediator";$/;"	m	class:Mediator	file:
+MEDIATOR_NAME	Patterns/Mediator.h	/^    static QString MEDIATOR_NAME;$/;"	m	class:Mediator	access:protected
+MODEL_H	Core/Model.h	2;"	d
+Mediator	Patterns/Mediator.h	/^class Mediator : public IMediator, public Notifier, public IObserver$/;"	c	inherits:IMediator,Notifier,IObserver
+Mediator::MEDIATOR_NAME	Patterns/Mediator.cpp	/^QString Mediator::MEDIATOR_NAME = "Mediator";$/;"	m	class:Mediator	file:
+Mediator::MEDIATOR_NAME	Patterns/Mediator.h	/^    static QString MEDIATOR_NAME;$/;"	m	class:Mediator	access:protected
+Mediator::getListNotificationInterests	Patterns/Mediator.h	/^    virtual QList<QString> getListNotificationInterests() = 0;$/;"	p	class:Mediator	access:public	signature:()
+Mediator::getMediatorName	Patterns/Mediator.cpp	/^QString Mediator::getMediatorName()$/;"	f	class:Mediator	signature:()
+Mediator::getMediatorName	Patterns/Mediator.h	/^    QString getMediatorName();$/;"	p	class:Mediator	access:public	signature:()
+Mediator::handleNotification	Patterns/Mediator.h	/^    virtual void handleNotification(INotification *notification) = 0;$/;"	p	class:Mediator	access:public	signature:(INotification *notification)
+Mediator::m_viewComponent	Patterns/Mediator.h	/^    IViewComponent *m_viewComponent;$/;"	m	class:Mediator	access:protected
+Mediator::notifyObserver	Patterns/Mediator.cpp	/^void Mediator::notifyObserver(INotification *notification)$/;"	f	class:Mediator	signature:(INotification *notification)
+Mediator::notifyObserver	Patterns/Mediator.h	/^    void notifyObserver(INotification *notification);$/;"	p	class:Mediator	access:public	signature:(INotification *notification)
+Mediator::registerViewComponent	Patterns/Mediator.cpp	/^void Mediator::registerViewComponent(IViewComponent *viewComponent)$/;"	f	class:Mediator	signature:(IViewComponent *viewComponent)
+Mediator::registerViewComponent	Patterns/Mediator.h	/^    void registerViewComponent(IViewComponent *viewComponent);$/;"	p	class:Mediator	access:public	signature:(IViewComponent *viewComponent)
+Model	Core/Model.cpp	/^Model::Model()$/;"	f	class:Model	signature:()
+Model	Core/Model.h	/^    Model();$/;"	p	class:Model	access:private	signature:()
+Model	Core/Model.h	/^class Model : public IModel$/;"	c	inherits:IModel
+Model::Model	Core/Model.cpp	/^Model::Model()$/;"	f	class:Model	signature:()
+Model::Model	Core/Model.h	/^    Model();$/;"	p	class:Model	access:private	signature:()
+Model::getInstance	Core/Model.cpp	/^Model *Model::getInstance()$/;"	f	class:Model	signature:()
+Model::getInstance	Core/Model.h	/^    static Model *getInstance();$/;"	p	class:Model	access:public	signature:()
+Model::hasProxy	Core/Model.cpp	/^bool Model::hasProxy(const QString &proxyName)$/;"	f	class:Model	signature:(const QString &proxyName)
+Model::hasProxy	Core/Model.h	/^    bool hasProxy(const QString &proxyName);$/;"	p	class:Model	access:public	signature:(const QString &proxyName)
+Model::m_instance	Core/Model.cpp	/^Model *Model::m_instance;$/;"	m	class:Model	file:
+Model::m_instance	Core/Model.h	/^    static Model *m_instance;$/;"	m	class:Model	access:private
+Model::m_proxyMap	Core/Model.h	/^    QMap<QString, IProxy *> m_proxyMap;$/;"	m	class:Model	access:private
+Model::registerProxy	Core/Model.cpp	/^void Model::registerProxy(IProxy *proxy)$/;"	f	class:Model	signature:(IProxy *proxy)
+Model::registerProxy	Core/Model.h	/^    void registerProxy(IProxy *proxy);$/;"	p	class:Model	access:public	signature:(IProxy *proxy)
+Model::removeProxy	Core/Model.cpp	/^void Model::removeProxy(const QString &proxyName)$/;"	f	class:Model	signature:(const QString &proxyName)
+Model::removeProxy	Core/Model.h	/^    void removeProxy(const QString &proxyName);$/;"	p	class:Model	access:public	signature:(const QString &proxyName)
+Model::retrieveProxy	Core/Model.cpp	/^IProxy *Model::retrieveProxy(const QString &proxyName)$/;"	f	class:Model	signature:(const QString &proxyName)
+Model::retrieveProxy	Core/Model.h	/^    IProxy *retrieveProxy(const QString &proxyName);$/;"	p	class:Model	access:public	signature:(const QString &proxyName)
+NOTIFICATION_H	Patterns/Notification.h	2;"	d
+NOTIFIER_H	Patterns/Notifier.h	2;"	d
+Notification	Patterns/Notification.cpp	/^Notification::Notification(const QString &notificationName, void *body)$/;"	f	class:Notification	signature:(const QString &notificationName, void *body)
+Notification	Patterns/Notification.h	/^    Notification(const QString &notificationName, void *body);$/;"	p	class:Notification	access:public	signature:(const QString &notificationName, void *body)
+Notification	Patterns/Notification.h	/^class Notification : public INotification$/;"	c	inherits:INotification
+Notification::Notification	Patterns/Notification.cpp	/^Notification::Notification(const QString &notificationName, void *body)$/;"	f	class:Notification	signature:(const QString &notificationName, void *body)
+Notification::Notification	Patterns/Notification.h	/^    Notification(const QString &notificationName, void *body);$/;"	p	class:Notification	access:public	signature:(const QString &notificationName, void *body)
+Notification::getBody	Patterns/Notification.cpp	/^void *Notification::getBody()$/;"	f	class:Notification	signature:()
+Notification::getBody	Patterns/Notification.h	/^    void *getBody();$/;"	p	class:Notification	access:public	signature:()
+Notification::getNotificationName	Patterns/Notification.cpp	/^QString Notification::getNotificationName()$/;"	f	class:Notification	signature:()
+Notification::getNotificationName	Patterns/Notification.h	/^    QString getNotificationName();$/;"	p	class:Notification	access:public	signature:()
+Notification::m_body	Patterns/Notification.h	/^    void *m_body;$/;"	m	class:Notification	access:protected
+Notification::m_notificationName	Patterns/Notification.h	/^    QString m_notificationName;$/;"	m	class:Notification	access:protected
+Notifier	Patterns/Notifier.cpp	/^Notifier::Notifier()$/;"	f	class:Notifier	signature:()
+Notifier	Patterns/Notifier.h	/^    Notifier();$/;"	p	class:Notifier	access:public	signature:()
+Notifier	Patterns/Notifier.h	/^class Notifier$/;"	c
+Notifier::Notifier	Patterns/Notifier.cpp	/^Notifier::Notifier()$/;"	f	class:Notifier	signature:()
+Notifier::Notifier	Patterns/Notifier.h	/^    Notifier();$/;"	p	class:Notifier	access:public	signature:()
+Notifier::m_facade	Patterns/Notifier.h	/^    IFacade *m_facade;$/;"	m	class:Notifier	access:protected
+Notifier::sendNotification	Patterns/Notifier.cpp	/^void Notifier::sendNotification(const QString &notificationName, void *body)$/;"	f	class:Notifier	signature:(const QString &notificationName, void *body)
+Notifier::sendNotification	Patterns/Notifier.h	/^    void sendNotification(const QString &notificationName, void *body);$/;"	p	class:Notifier	access:public	signature:(const QString &notificationName, void *body)
+PROXY_H	Patterns/Proxy.h	2;"	d
+PROXY_NAME	Patterns/Proxy.cpp	/^QString Proxy::PROXY_NAME = "Proxy";$/;"	m	class:Proxy	file:
+PROXY_NAME	Patterns/Proxy.h	/^    static QString PROXY_NAME;$/;"	m	class:Proxy	access:protected
+Proxy	Patterns/Proxy.h	/^class Proxy : public IProxy, public Notifier$/;"	c	inherits:IProxy,Notifier
+Proxy::PROXY_NAME	Patterns/Proxy.cpp	/^QString Proxy::PROXY_NAME = "Proxy";$/;"	m	class:Proxy	file:
+Proxy::PROXY_NAME	Patterns/Proxy.h	/^    static QString PROXY_NAME;$/;"	m	class:Proxy	access:protected
+Proxy::getProxyName	Patterns/Proxy.cpp	/^QString Proxy::getProxyName()$/;"	f	class:Proxy	signature:()
+Proxy::getProxyName	Patterns/Proxy.h	/^    QString getProxyName();$/;"	p	class:Proxy	access:public	signature:()
+UI_LOGIN_DIALOG_H	ui_login_dialog.h	11;"	d
+UPDATEDATA_H	Patterns/UpdateData.h	2;"	d
+Ui	LoginForm.h	/^namespace Ui {$/;"	n
+Ui	ui_login_dialog.h	/^namespace Ui {$/;"	n
+Ui::Dialog	ui_login_dialog.h	/^    class Dialog: public Ui_Dialog {};$/;"	c	namespace:Ui	inherits:Ui_Dialog
+Ui_Dialog	ui_login_dialog.h	/^class Ui_Dialog$/;"	c
+Ui_Dialog::loginButton	ui_login_dialog.h	/^    QPushButton *loginButton;$/;"	m	class:Ui_Dialog	access:public
+Ui_Dialog::retranslateUi	ui_login_dialog.h	/^    void retranslateUi(QDialog *Dialog)$/;"	f	class:Ui_Dialog	access:public	signature:(QDialog *Dialog)
+Ui_Dialog::setupUi	ui_login_dialog.h	/^    void setupUi(QDialog *Dialog)$/;"	f	class:Ui_Dialog	access:public	signature:(QDialog *Dialog)
+UpdateData	Patterns/UpdateData.h	/^class UpdateData : public IUpdateData$/;"	c	inherits:IUpdateData
+UpdateData::getName	Patterns/UpdateData.cpp	/^QString UpdateData::getName() const$/;"	f	class:UpdateData	signature:() const
+UpdateData::getName	Patterns/UpdateData.h	/^    QString getName() const;$/;"	p	class:UpdateData	access:public	signature:() const
+UpdateData::m_updateDataName	Patterns/UpdateData.h	/^    QString m_updateDataName;$/;"	m	class:UpdateData	access:protected
+VIEW_H	Core/View.h	2;"	d
+View	Core/View.cpp	/^View::View()$/;"	f	class:View	signature:()
+View	Core/View.h	/^    View();$/;"	p	class:View	access:private	signature:()
+View	Core/View.h	/^class View : public IView$/;"	c	inherits:IView
+View::View	Core/View.cpp	/^View::View()$/;"	f	class:View	signature:()
+View::View	Core/View.h	/^    View();$/;"	p	class:View	access:private	signature:()
+View::getInstance	Core/View.cpp	/^View *View::getInstance()$/;"	f	class:View	signature:()
+View::getInstance	Core/View.h	/^    static View *getInstance();$/;"	p	class:View	access:public	signature:()
+View::hasMediator	Core/View.cpp	/^bool View::hasMediator(const QString &mediatorName)$/;"	f	class:View	signature:(const QString &mediatorName)
+View::hasMediator	Core/View.h	/^    bool hasMediator(const QString &mediatorName);$/;"	p	class:View	access:public	signature:(const QString &mediatorName)
+View::m_instance	Core/View.cpp	/^View *View::m_instance;$/;"	m	class:View	file:
+View::m_instance	Core/View.h	/^    static View *m_instance;$/;"	m	class:View	access:private
+View::m_mediatorMap	Core/View.h	/^    QMap<QString, IMediator *> m_mediatorMap;$/;"	m	class:View	access:private
+View::m_observerMap	Core/View.h	/^    QMap<QString, QList<IObserver *> > m_observerMap;$/;"	m	class:View	access:private
+View::notifyObservers	Core/View.cpp	/^void View::notifyObservers(INotification *notification)$/;"	f	class:View	signature:(INotification *notification)
+View::notifyObservers	Core/View.h	/^    void notifyObservers(INotification *notification);$/;"	p	class:View	access:public	signature:(INotification *notification)
+View::registerMediator	Core/View.cpp	/^void View::registerMediator(IMediator *mediator)$/;"	f	class:View	signature:(IMediator *mediator)
+View::registerMediator	Core/View.h	/^    void registerMediator(IMediator *mediator);$/;"	p	class:View	access:public	signature:(IMediator *mediator)
+View::registerObserver	Core/View.cpp	/^void View::registerObserver(IObserver *observer, const QString &notificationName)$/;"	f	class:View	signature:(IObserver *observer, const QString &notificationName)
+View::registerObserver	Core/View.h	/^    void registerObserver(IObserver *observer, const QString &notificationName);$/;"	p	class:View	access:public	signature:(IObserver *observer, const QString &notificationName)
+View::removeMediator	Core/View.cpp	/^void View::removeMediator(const QString &mediatorName)$/;"	f	class:View	signature:(const QString &mediatorName)
+View::removeMediator	Core/View.h	/^    void removeMediator(const QString &mediatorName);$/;"	p	class:View	access:public	signature:(const QString &mediatorName)
+View::removeObserver	Core/View.cpp	/^void View::removeObserver(const QString &notificationName)$/;"	f	class:View	signature:(const QString &notificationName)
+View::removeObserver	Core/View.h	/^    void removeObserver(const QString &notificationName);$/;"	p	class:View	access:public	signature:(const QString &notificationName)
+View::retrieveMediator	Core/View.cpp	/^IMediator *View::retrieveMediator(const QString &mediatorName)$/;"	f	class:View	signature:(const QString &mediatorName)
+View::retrieveMediator	Core/View.h	/^    IMediator *retrieveMediator(const QString &mediatorName);$/;"	p	class:View	access:public	signature:(const QString &mediatorName)
+changeEvent	LoginForm.cpp	/^void Dialog::changeEvent(QEvent *e)$/;"	f	class:Dialog	signature:(QEvent *e)
+changeEvent	LoginForm.h	/^    void changeEvent(QEvent *e);$/;"	p	class:Dialog	access:protected	signature:(QEvent *e)
+checkLogin	LoginProxy.cpp	/^void LoginProxy::checkLogin(LoginInfo *loginInfo)$/;"	f	class:LoginProxy	signature:(LoginInfo *loginInfo)
+checkLogin	LoginProxy.h	/^    void checkLogin(LoginInfo *loginInfo);$/;"	p	class:LoginProxy	access:public	signature:(LoginInfo *loginInfo)
+doLogin	LoginMediator.cpp	/^void LoginMediator::doLogin(LoginInfo *loginInfo)$/;"	f	class:LoginMediator	signature:(LoginInfo *loginInfo)
+doLogin	LoginMediator.h	/^    void doLogin(LoginInfo *loginInfo);$/;"	p	class:LoginMediator	access:public	signature:(LoginInfo *loginInfo)
+excute	Interface/ICommand.h	/^    virtual void excute(INotification *notification) = 0;$/;"	p	class:ICommand	access:public	signature:(INotification *notification)
+excute	LoginCommand.cpp	/^void LoginCommand::excute(INotification *notification)$/;"	f	class:LoginCommand	signature:(INotification *notification)
+excute	LoginCommand.h	/^    void excute(INotification *notification);$/;"	p	class:LoginCommand	access:public	signature:(INotification *notification)
+excute	Patterns/Command.cpp	/^void Command::excute(INotification *notification)$/;"	f	class:Command	signature:(INotification *notification)
+excute	Patterns/Command.h	/^    virtual void excute(INotification *notification);$/;"	p	class:Command	access:public	signature:(INotification *notification)
+excuteCommand	Core/Controller.cpp	/^void Controller::excuteCommand(INotification *notification)$/;"	f	class:Controller	signature:(INotification *notification)
+excuteCommand	Core/Controller.h	/^    void excuteCommand(INotification *notification);$/;"	p	class:Controller	access:public	signature:(INotification *notification)
+excuteCommand	Interface/IController.h	/^    virtual void excuteCommand(INotification *notification) = 0;$/;"	p	class:IController	access:public	signature:(INotification *notification)
+getBody	Interface/INotification.h	/^    virtual void *getBody() = 0;$/;"	p	class:INotification	access:public	signature:()
+getBody	Patterns/Notification.cpp	/^void *Notification::getBody()$/;"	f	class:Notification	signature:()
+getBody	Patterns/Notification.h	/^    void *getBody();$/;"	p	class:Notification	access:public	signature:()
+getInstance	Core/Controller.cpp	/^Controller *Controller::getInstance()$/;"	f	class:Controller	signature:()
+getInstance	Core/Controller.h	/^    static Controller *getInstance();$/;"	p	class:Controller	access:public	signature:()
+getInstance	Core/Model.cpp	/^Model *Model::getInstance()$/;"	f	class:Model	signature:()
+getInstance	Core/Model.h	/^    static Model *getInstance();$/;"	p	class:Model	access:public	signature:()
+getInstance	Core/View.cpp	/^View *View::getInstance()$/;"	f	class:View	signature:()
+getInstance	Core/View.h	/^    static View *getInstance();$/;"	p	class:View	access:public	signature:()
+getInstance	Patterns/Facade.cpp	/^Facade *Facade::getInstance()$/;"	f	class:Facade	signature:()
+getInstance	Patterns/Facade.h	/^    static Facade *getInstance();$/;"	p	class:Facade	access:public	signature:()
+getListNotificationInterests	Interface/IMediator.h	/^    virtual QList<QString> getListNotificationInterests() = 0;$/;"	p	class:IMediator	access:public	signature:()
+getListNotificationInterests	LoginMediator.cpp	/^QList<QString> LoginMediator::getListNotificationInterests()$/;"	f	class:LoginMediator	signature:()
+getListNotificationInterests	LoginMediator.h	/^    QList<QString> getListNotificationInterests();$/;"	p	class:LoginMediator	access:public	signature:()
+getListNotificationInterests	Patterns/Mediator.h	/^    virtual QList<QString> getListNotificationInterests() = 0;$/;"	p	class:Mediator	access:public	signature:()
+getMediatorName	Interface/IMediator.h	/^    virtual QString getMediatorName() = 0;$/;"	p	class:IMediator	access:public	signature:()
+getMediatorName	Patterns/Mediator.cpp	/^QString Mediator::getMediatorName()$/;"	f	class:Mediator	signature:()
+getMediatorName	Patterns/Mediator.h	/^    QString getMediatorName();$/;"	p	class:Mediator	access:public	signature:()
+getName	Interface/IUpdateData.h	/^    virtual QString getName() const = 0;$/;"	p	class:IUpdateData	access:public	signature:() const
+getName	Patterns/UpdateData.cpp	/^QString UpdateData::getName() const$/;"	f	class:UpdateData	signature:() const
+getName	Patterns/UpdateData.h	/^    QString getName() const;$/;"	p	class:UpdateData	access:public	signature:() const
+getNotificationName	Interface/INotification.h	/^    virtual QString getNotificationName() = 0;$/;"	p	class:INotification	access:public	signature:()
+getNotificationName	Patterns/Notification.cpp	/^QString Notification::getNotificationName()$/;"	f	class:Notification	signature:()
+getNotificationName	Patterns/Notification.h	/^    QString getNotificationName();$/;"	p	class:Notification	access:public	signature:()
+getProxyName	Interface/IProxy.h	/^    virtual QString getProxyName() = 0;$/;"	p	class:IProxy	access:public	signature:()
+getProxyName	Patterns/Proxy.cpp	/^QString Proxy::getProxyName()$/;"	f	class:Proxy	signature:()
+getProxyName	Patterns/Proxy.h	/^    QString getProxyName();$/;"	p	class:Proxy	access:public	signature:()
+handleNotification	Interface/IMediator.h	/^    virtual void handleNotification(INotification *notification) = 0;$/;"	p	class:IMediator	access:public	signature:(INotification *notification)
+handleNotification	LoginMediator.cpp	/^void LoginMediator::handleNotification(INotification *notification)$/;"	f	class:LoginMediator	signature:(INotification *notification)
+handleNotification	LoginMediator.h	/^    void handleNotification(INotification *notification);$/;"	p	class:LoginMediator	access:public	signature:(INotification *notification)
+handleNotification	Patterns/Mediator.h	/^    virtual void handleNotification(INotification *notification) = 0;$/;"	p	class:Mediator	access:public	signature:(INotification *notification)
+hasCommand	Core/Controller.cpp	/^bool Controller::hasCommand(const QString &notificationName)$/;"	f	class:Controller	signature:(const QString &notificationName)
+hasCommand	Core/Controller.h	/^    bool hasCommand(const QString &notificationName);$/;"	p	class:Controller	access:public	signature:(const QString &notificationName)
+hasCommand	Interface/IController.h	/^    virtual bool hasCommand(const QString &notificationName) = 0;$/;"	p	class:IController	access:public	signature:(const QString &notificationName)
+hasCommand	Interface/IFacade.h	/^    virtual bool hasCommand(const QString &notificationName) = 0;$/;"	p	class:IFacade	access:public	signature:(const QString &notificationName)
+hasCommand	Patterns/Facade.cpp	/^bool Facade::hasCommand(const QString &notificationName)$/;"	f	class:Facade	signature:(const QString &notificationName)
+hasCommand	Patterns/Facade.h	/^    bool hasCommand(const QString &notificationName);$/;"	p	class:Facade	access:public	signature:(const QString &notificationName)
+hasMediator	Core/View.cpp	/^bool View::hasMediator(const QString &mediatorName)$/;"	f	class:View	signature:(const QString &mediatorName)
+hasMediator	Core/View.h	/^    bool hasMediator(const QString &mediatorName);$/;"	p	class:View	access:public	signature:(const QString &mediatorName)
+hasMediator	Interface/IFacade.h	/^    virtual bool hasMediator(const QString &mediatorName) = 0;$/;"	p	class:IFacade	access:public	signature:(const QString &mediatorName)
+hasMediator	Interface/IView.h	/^    virtual bool hasMediator(const QString &mediatorName) = 0;$/;"	p	class:IView	access:public	signature:(const QString &mediatorName)
+hasMediator	Patterns/Facade.cpp	/^bool Facade::hasMediator(const QString &mediatorName)$/;"	f	class:Facade	signature:(const QString &mediatorName)
+hasMediator	Patterns/Facade.h	/^    bool hasMediator(const QString &mediatorName);$/;"	p	class:Facade	access:public	signature:(const QString &mediatorName)
+hasProxy	Core/Model.cpp	/^bool Model::hasProxy(const QString &proxyName)$/;"	f	class:Model	signature:(const QString &proxyName)
+hasProxy	Core/Model.h	/^    bool hasProxy(const QString &proxyName);$/;"	p	class:Model	access:public	signature:(const QString &proxyName)
+hasProxy	Interface/IFacade.h	/^    virtual bool hasProxy(const QString &proxyName) = 0;$/;"	p	class:IFacade	access:public	signature:(const QString &proxyName)
+hasProxy	Interface/IModel.h	/^    virtual bool hasProxy(const QString &proxyName) = 0;$/;"	p	class:IModel	access:public	signature:(const QString &proxyName)
+hasProxy	Patterns/Facade.cpp	/^bool Facade::hasProxy(const QString &proxyName)$/;"	f	class:Facade	signature:(const QString &proxyName)
+hasProxy	Patterns/Facade.h	/^    bool hasProxy(const QString &proxyName);$/;"	p	class:Facade	access:public	signature:(const QString &proxyName)
+initializeCommand	ApplicationFacade.cpp	/^void ApplicationFacade::initializeCommand()$/;"	f	class:ApplicationFacade	signature:()
+initializeCommand	ApplicationFacade.h	/^    void initializeCommand();$/;"	p	class:ApplicationFacade	access:protected	signature:()
+initializeCommand	Patterns/Facade.cpp	/^void Facade::initializeCommand()$/;"	f	class:Facade	signature:()
+initializeCommand	Patterns/Facade.h	/^    virtual void initializeCommand();$/;"	p	class:Facade	access:protected	signature:()
+initializeMediator	ApplicationFacade.cpp	/^void ApplicationFacade::initializeMediator()$/;"	f	class:ApplicationFacade	signature:()
+initializeMediator	ApplicationFacade.h	/^    void initializeMediator();$/;"	p	class:ApplicationFacade	access:protected	signature:()
+initializeMediator	Patterns/Facade.cpp	/^void Facade::initializeMediator()$/;"	f	class:Facade	signature:()
+initializeMediator	Patterns/Facade.h	/^    virtual void initializeMediator();$/;"	p	class:Facade	access:protected	signature:()
+initializeProxy	ApplicationFacade.cpp	/^void ApplicationFacade::initializeProxy()$/;"	f	class:ApplicationFacade	signature:()
+initializeProxy	ApplicationFacade.h	/^    void initializeProxy();$/;"	p	class:ApplicationFacade	access:protected	signature:()
+initializeProxy	Patterns/Facade.cpp	/^void Facade::initializeProxy()$/;"	f	class:Facade	signature:()
+initializeProxy	Patterns/Facade.h	/^    virtual void initializeProxy();$/;"	p	class:Facade	access:protected	signature:()
+loginButton	ui_login_dialog.h	/^    QPushButton *loginButton;$/;"	m	class:Ui_Dialog	access:public
+loginMediator	LoginForm.h	/^    LoginMediator *loginMediator;$/;"	m	class:Dialog	access:private
+m_body	Patterns/Notification.h	/^    void *m_body;$/;"	m	class:Notification	access:protected
+m_commandMap	Core/Controller.h	/^    QMap<QString, ICommand *> m_commandMap;$/;"	m	class:Controller	access:private
+m_controller	Patterns/Facade.h	/^    IController *m_controller;$/;"	m	class:Facade	access:private
+m_facade	Patterns/Notifier.h	/^    IFacade *m_facade;$/;"	m	class:Notifier	access:protected
+m_instance	Core/Controller.cpp	/^Controller *Controller::m_instance;$/;"	m	class:Controller	file:
+m_instance	Core/Controller.h	/^    static Controller *m_instance;$/;"	m	class:Controller	access:private
+m_instance	Core/Model.cpp	/^Model *Model::m_instance;$/;"	m	class:Model	file:
+m_instance	Core/Model.h	/^    static Model *m_instance;$/;"	m	class:Model	access:private
+m_instance	Core/View.cpp	/^View *View::m_instance;$/;"	m	class:View	file:
+m_instance	Core/View.h	/^    static View *m_instance;$/;"	m	class:View	access:private
+m_instance	Patterns/Facade.cpp	/^Facade *Facade::m_instance;$/;"	m	class:Facade	file:
+m_instance	Patterns/Facade.h	/^    static Facade *m_instance;$/;"	m	class:Facade	access:private
+m_mediatorMap	Core/View.h	/^    QMap<QString, IMediator *> m_mediatorMap;$/;"	m	class:View	access:private
+m_model	Patterns/Facade.h	/^    IModel *m_model;$/;"	m	class:Facade	access:private
+m_notificationInterests	LoginMediator.h	/^    QList<QString> m_notificationInterests;$/;"	m	class:LoginMediator	access:private
+m_notificationName	Patterns/Notification.h	/^    QString m_notificationName;$/;"	m	class:Notification	access:protected
+m_observerMap	Core/View.h	/^    QMap<QString, QList<IObserver *> > m_observerMap;$/;"	m	class:View	access:private
+m_proxyMap	Core/Model.h	/^    QMap<QString, IProxy *> m_proxyMap;$/;"	m	class:Model	access:private
+m_updateDataName	Patterns/UpdateData.h	/^    QString m_updateDataName;$/;"	m	class:UpdateData	access:protected
+m_view	Core/Controller.h	/^    IView *m_view;$/;"	m	class:Controller	access:private
+m_view	Patterns/Facade.h	/^    IView *m_view;$/;"	m	class:Facade	access:private
+m_viewComponent	Patterns/Mediator.h	/^    IViewComponent *m_viewComponent;$/;"	m	class:Mediator	access:protected
+main	main.cpp	/^int main(int argc, char **argv)$/;"	f	signature:(int argc, char **argv)
+name	LoginInfo.h	/^    QString name;$/;"	m	class:LoginInfo	access:public
+notifyObserver	Interface/IObserver.h	/^    virtual void notifyObserver(INotification *notification) = 0;$/;"	p	class:IObserver	access:public	signature:(INotification *notification)
+notifyObserver	Patterns/Command.cpp	/^void Command::notifyObserver(INotification *notification)$/;"	f	class:Command	signature:(INotification *notification)
+notifyObserver	Patterns/Command.h	/^    void notifyObserver(INotification *notification);$/;"	p	class:Command	access:public	signature:(INotification *notification)
+notifyObserver	Patterns/Mediator.cpp	/^void Mediator::notifyObserver(INotification *notification)$/;"	f	class:Mediator	signature:(INotification *notification)
+notifyObserver	Patterns/Mediator.h	/^    void notifyObserver(INotification *notification);$/;"	p	class:Mediator	access:public	signature:(INotification *notification)
+notifyObservers	Core/View.cpp	/^void View::notifyObservers(INotification *notification)$/;"	f	class:View	signature:(INotification *notification)
+notifyObservers	Core/View.h	/^    void notifyObservers(INotification *notification);$/;"	p	class:View	access:public	signature:(INotification *notification)
+notifyObservers	Interface/IFacade.h	/^    virtual void notifyObservers(INotification *notification) = 0;$/;"	p	class:IFacade	access:public	signature:(INotification *notification)
+notifyObservers	Interface/IView.h	/^    virtual void notifyObservers(INotification *notification) = 0;$/;"	p	class:IView	access:public	signature:(INotification *notification)
+notifyObservers	Patterns/Facade.cpp	/^void Facade::notifyObservers(INotification *notification)$/;"	f	class:Facade	signature:(INotification *notification)
+notifyObservers	Patterns/Facade.h	/^    void notifyObservers(INotification *notification);$/;"	p	class:Facade	access:public	signature:(INotification *notification)
+on_loginButton_clicked	LoginForm.cpp	/^void Dialog::on_loginButton_clicked()$/;"	f	class:Dialog	signature:()
+on_loginButton_clicked	LoginForm.h	/^    void on_loginButton_clicked();$/;"	p	class:Dialog	access:private	signature:()
+password	LoginInfo.h	/^    QString password;$/;"	m	class:LoginInfo	access:public
+registerCommand	Core/Controller.cpp	/^void Controller::registerCommand(const QString &notificationName, ICommand *command)$/;"	f	class:Controller	signature:(const QString &notificationName, ICommand *command)
+registerCommand	Core/Controller.h	/^    void registerCommand(const QString &notificationName, ICommand *command);$/;"	p	class:Controller	access:public	signature:(const QString &notificationName, ICommand *command)
+registerCommand	Interface/IController.h	/^    virtual void registerCommand(const QString &notificationName, ICommand *command) = 0;$/;"	p	class:IController	access:public	signature:(const QString &notificationName, ICommand *command)
+registerCommand	Interface/IFacade.h	/^    virtual void registerCommand(const QString &notificationName, ICommand *command) = 0;$/;"	p	class:IFacade	access:public	signature:(const QString &notificationName, ICommand *command)
+registerCommand	Patterns/Facade.cpp	/^void Facade::registerCommand(const QString &notificationName, ICommand *command)$/;"	f	class:Facade	signature:(const QString &notificationName, ICommand *command)
+registerCommand	Patterns/Facade.h	/^    void registerCommand(const QString &notificationName, ICommand *command);$/;"	p	class:Facade	access:public	signature:(const QString &notificationName, ICommand *command)
+registerMediator	Core/View.cpp	/^void View::registerMediator(IMediator *mediator)$/;"	f	class:View	signature:(IMediator *mediator)
+registerMediator	Core/View.h	/^    void registerMediator(IMediator *mediator);$/;"	p	class:View	access:public	signature:(IMediator *mediator)
+registerMediator	Interface/IFacade.h	/^    virtual void registerMediator(IMediator *mediator) = 0;$/;"	p	class:IFacade	access:public	signature:(IMediator *mediator)
+registerMediator	Interface/IView.h	/^    virtual void registerMediator(IMediator *mediator) = 0;$/;"	p	class:IView	access:public	signature:(IMediator *mediator)
+registerMediator	Patterns/Facade.cpp	/^void Facade::registerMediator(IMediator *mediator)$/;"	f	class:Facade	signature:(IMediator *mediator)
+registerMediator	Patterns/Facade.h	/^    void registerMediator(IMediator *mediator);$/;"	p	class:Facade	access:public	signature:(IMediator *mediator)
+registerObserver	Core/View.cpp	/^void View::registerObserver(IObserver *observer, const QString &notificationName)$/;"	f	class:View	signature:(IObserver *observer, const QString &notificationName)
+registerObserver	Core/View.h	/^    void registerObserver(IObserver *observer, const QString &notificationName);$/;"	p	class:View	access:public	signature:(IObserver *observer, const QString &notificationName)
+registerObserver	Interface/IFacade.h	/^    virtual void registerObserver(IObserver *observer, const QString &notificationName) = 0;$/;"	p	class:IFacade	access:public	signature:(IObserver *observer, const QString &notificationName)
+registerObserver	Interface/IView.h	/^    virtual void registerObserver(IObserver *observer, const QString &notificationName) = 0;$/;"	p	class:IView	access:public	signature:(IObserver *observer, const QString &notificationName)
+registerObserver	Patterns/Facade.cpp	/^void Facade::registerObserver(IObserver *observer, const QString &notificationName)$/;"	f	class:Facade	signature:(IObserver *observer, const QString &notificationName)
+registerObserver	Patterns/Facade.h	/^    void registerObserver(IObserver *observer, const QString &notificationName);$/;"	p	class:Facade	access:public	signature:(IObserver *observer, const QString &notificationName)
+registerProxy	Core/Model.cpp	/^void Model::registerProxy(IProxy *proxy)$/;"	f	class:Model	signature:(IProxy *proxy)
+registerProxy	Core/Model.h	/^    void registerProxy(IProxy *proxy);$/;"	p	class:Model	access:public	signature:(IProxy *proxy)
+registerProxy	Interface/IFacade.h	/^    virtual void registerProxy(IProxy *proxy) = 0;$/;"	p	class:IFacade	access:public	signature:(IProxy *proxy)
+registerProxy	Interface/IModel.h	/^    virtual void registerProxy(IProxy *proxy) = 0;$/;"	p	class:IModel	access:public	signature:(IProxy *proxy)
+registerProxy	Patterns/Facade.cpp	/^void Facade::registerProxy(IProxy *proxy)$/;"	f	class:Facade	signature:(IProxy *proxy)
+registerProxy	Patterns/Facade.h	/^    void registerProxy(IProxy *proxy);$/;"	p	class:Facade	access:public	signature:(IProxy *proxy)
+registerViewComponent	Interface/IMediator.h	/^    virtual void registerViewComponent(IViewComponent *viewComponent) = 0;$/;"	p	class:IMediator	access:public	signature:(IViewComponent *viewComponent)
+registerViewComponent	Patterns/Mediator.cpp	/^void Mediator::registerViewComponent(IViewComponent *viewComponent)$/;"	f	class:Mediator	signature:(IViewComponent *viewComponent)
+registerViewComponent	Patterns/Mediator.h	/^    void registerViewComponent(IViewComponent *viewComponent);$/;"	p	class:Mediator	access:public	signature:(IViewComponent *viewComponent)
+removeCommand	Core/Controller.cpp	/^void Controller::removeCommand(const QString &notificationName)$/;"	f	class:Controller	signature:(const QString &notificationName)
+removeCommand	Core/Controller.h	/^    void removeCommand(const QString &notificationName);$/;"	p	class:Controller	access:public	signature:(const QString &notificationName)
+removeCommand	Interface/IController.h	/^    virtual void removeCommand(const QString &notificationName) = 0;$/;"	p	class:IController	access:public	signature:(const QString &notificationName)
+removeCommand	Interface/IFacade.h	/^    virtual void removeCommand(const QString &notificationName) = 0;$/;"	p	class:IFacade	access:public	signature:(const QString &notificationName)
+removeCommand	Patterns/Facade.cpp	/^void Facade::removeCommand(const QString &notificationName)$/;"	f	class:Facade	signature:(const QString &notificationName)
+removeCommand	Patterns/Facade.h	/^    void removeCommand(const QString &notificationName);$/;"	p	class:Facade	access:public	signature:(const QString &notificationName)
+removeMediator	Core/View.cpp	/^void View::removeMediator(const QString &mediatorName)$/;"	f	class:View	signature:(const QString &mediatorName)
+removeMediator	Core/View.h	/^    void removeMediator(const QString &mediatorName);$/;"	p	class:View	access:public	signature:(const QString &mediatorName)
+removeMediator	Interface/IFacade.h	/^    virtual void removeMediator(const QString &mediatorName) = 0;$/;"	p	class:IFacade	access:public	signature:(const QString &mediatorName)
+removeMediator	Interface/IView.h	/^    virtual void removeMediator(const QString &mediatorName) = 0;$/;"	p	class:IView	access:public	signature:(const QString &mediatorName)
+removeMediator	Patterns/Facade.cpp	/^void Facade::removeMediator(const QString &mediatorName)$/;"	f	class:Facade	signature:(const QString &mediatorName)
+removeMediator	Patterns/Facade.h	/^    void removeMediator(const QString &mediatorName);$/;"	p	class:Facade	access:public	signature:(const QString &mediatorName)
+removeObserver	Core/View.cpp	/^void View::removeObserver(const QString &notificationName)$/;"	f	class:View	signature:(const QString &notificationName)
+removeObserver	Core/View.h	/^    void removeObserver(const QString &notificationName);$/;"	p	class:View	access:public	signature:(const QString &notificationName)
+removeObserver	Interface/IFacade.h	/^    virtual void removeObserver(const QString &notificationName) = 0;$/;"	p	class:IFacade	access:public	signature:(const QString &notificationName)
+removeObserver	Interface/IView.h	/^    virtual void removeObserver(const QString &notificationName) = 0;$/;"	p	class:IView	access:public	signature:(const QString &notificationName)
+removeObserver	Patterns/Facade.cpp	/^void Facade::removeObserver(const QString &notificationName)$/;"	f	class:Facade	signature:(const QString &notificationName)
+removeObserver	Patterns/Facade.h	/^    void removeObserver(const QString &notificationName);$/;"	p	class:Facade	access:public	signature:(const QString &notificationName)
+removeProxy	Core/Model.cpp	/^void Model::removeProxy(const QString &proxyName)$/;"	f	class:Model	signature:(const QString &proxyName)
+removeProxy	Core/Model.h	/^    void removeProxy(const QString &proxyName);$/;"	p	class:Model	access:public	signature:(const QString &proxyName)
+removeProxy	Interface/IFacade.h	/^    virtual void removeProxy(const QString &proxyName) = 0;$/;"	p	class:IFacade	access:public	signature:(const QString &proxyName)
+removeProxy	Interface/IModel.h	/^    virtual void removeProxy(const QString &proxyName) = 0;$/;"	p	class:IModel	access:public	signature:(const QString &proxyName)
+removeProxy	Patterns/Facade.cpp	/^void Facade::removeProxy(const QString &proxyName)$/;"	f	class:Facade	signature:(const QString &proxyName)
+removeProxy	Patterns/Facade.h	/^    void removeProxy(const QString &proxyName);$/;"	p	class:Facade	access:public	signature:(const QString &proxyName)
+result	LoginResult.h	/^    bool result;$/;"	m	class:LoginResult	access:public
+retranslateUi	ui_login_dialog.h	/^    void retranslateUi(QDialog *Dialog)$/;"	f	class:Ui_Dialog	access:public	signature:(QDialog *Dialog)
+retrieveMediator	Core/View.cpp	/^IMediator *View::retrieveMediator(const QString &mediatorName)$/;"	f	class:View	signature:(const QString &mediatorName)
+retrieveMediator	Core/View.h	/^    IMediator *retrieveMediator(const QString &mediatorName);$/;"	p	class:View	access:public	signature:(const QString &mediatorName)
+retrieveMediator	Interface/IFacade.h	/^    virtual IMediator *retrieveMediator(const QString &mediatorName) = 0;$/;"	p	class:IFacade	access:public	signature:(const QString &mediatorName)
+retrieveMediator	Interface/IView.h	/^    virtual IMediator *retrieveMediator(const QString &mediatorName) = 0;$/;"	p	class:IView	access:public	signature:(const QString &mediatorName)
+retrieveMediator	Patterns/Facade.cpp	/^IMediator *Facade::retrieveMediator(const QString &mediatorName)$/;"	f	class:Facade	signature:(const QString &mediatorName)
+retrieveMediator	Patterns/Facade.h	/^    IMediator *retrieveMediator(const QString &mediatorName);$/;"	p	class:Facade	access:public	signature:(const QString &mediatorName)
+retrieveProxy	Core/Model.cpp	/^IProxy *Model::retrieveProxy(const QString &proxyName)$/;"	f	class:Model	signature:(const QString &proxyName)
+retrieveProxy	Core/Model.h	/^    IProxy *retrieveProxy(const QString &proxyName);$/;"	p	class:Model	access:public	signature:(const QString &proxyName)
+retrieveProxy	Interface/IFacade.h	/^    virtual IProxy *retrieveProxy(const QString &proxyName) = 0;$/;"	p	class:IFacade	access:public	signature:(const QString &proxyName)
+retrieveProxy	Interface/IModel.h	/^    virtual IProxy *retrieveProxy(const QString &proxyName) = 0;$/;"	p	class:IModel	access:public	signature:(const QString &proxyName)
+retrieveProxy	Patterns/Facade.cpp	/^IProxy *Facade::retrieveProxy(const QString &proxyName)$/;"	f	class:Facade	signature:(const QString &proxyName)
+retrieveProxy	Patterns/Facade.h	/^    IProxy *retrieveProxy(const QString &proxyName);$/;"	p	class:Facade	access:public	signature:(const QString &proxyName)
+sendNotification	Interface/INotifier.h	/^    virtual void sendNotification(const QString &notificationName, void *body) = 0;$/;"	p	class:INotifier	access:public	signature:(const QString &notificationName, void *body)
+sendNotification	Patterns/Facade.cpp	/^void Facade::sendNotification(const QString &notificationName, void *body)$/;"	f	class:Facade	signature:(const QString &notificationName, void *body)
+sendNotification	Patterns/Facade.h	/^    void sendNotification(const QString &notificationName, void *body);$/;"	p	class:Facade	access:public	signature:(const QString &notificationName, void *body)
+sendNotification	Patterns/Notifier.cpp	/^void Notifier::sendNotification(const QString &notificationName, void *body)$/;"	f	class:Notifier	signature:(const QString &notificationName, void *body)
+sendNotification	Patterns/Notifier.h	/^    void sendNotification(const QString &notificationName, void *body);$/;"	p	class:Notifier	access:public	signature:(const QString &notificationName, void *body)
+setupUi	ui_login_dialog.h	/^    void setupUi(QDialog *Dialog)$/;"	f	class:Ui_Dialog	access:public	signature:(QDialog *Dialog)
+startUp	Patterns/Facade.cpp	/^void Facade::startUp()$/;"	f	class:Facade	signature:()
+startUp	Patterns/Facade.h	/^    void startUp();$/;"	p	class:Facade	access:public	signature:()
+ui	LoginForm.h	/^    Ui::Dialog *ui;$/;"	m	class:Dialog	access:private
+update	Interface/IViewComponent.h	/^    virtual void update(IUpdateData *updateData) = 0;$/;"	p	class:IViewComponent	access:public	signature:(IUpdateData *updateData)
+update	LoginForm.cpp	/^void Dialog::update(IUpdateData *updateData)$/;"	f	class:Dialog	signature:(IUpdateData *updateData)
+update	LoginForm.h	/^    void update(IUpdateData *updateData);$/;"	p	class:Dialog	access:public	signature:(IUpdateData *updateData)
+~Dialog	LoginForm.cpp	/^Dialog::~Dialog()$/;"	f	class:Dialog	signature:()
+~Dialog	LoginForm.h	/^    ~Dialog();$/;"	p	class:Dialog	access:public	signature:()
