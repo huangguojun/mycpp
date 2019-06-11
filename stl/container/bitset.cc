@@ -40,6 +40,7 @@ int main(int argc, const char *argv[])
     std::cout << bs3[4] << std::endl;
 
     // Bit operations.
+    std::cout << bs3 << std::endl;
     bs3.set();
     std::cout << bs3 << std::endl;
     bs3.set(2, false);
