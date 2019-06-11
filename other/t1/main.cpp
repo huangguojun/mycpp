@@ -3,8 +3,8 @@
  *
  *       Filename:  main.cpp
  *
- *    Description:  
- *
+ *    Description:  北京市第三交通委提醒您，道路千万条，安全第一条，代码不规范，运维两行泪			  
+ *			
  *        Version:  1.0
  *        Created:  07/23/2015 02:02:21 PM
  *       Revision:  none
