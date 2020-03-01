@@ -1,1 +1,0 @@
-/work/project/c_c++_pro/c++_primer/screen/CMakeFiles/a.out.dir
