@@ -27,11 +27,11 @@ struct Base
 
 struct Derived : Base 
 {
-	//virtual void some_func(int) override;   // 錯誤格式：Derive::some_func並沒有override Base::some_func
-	virtual void some_func(float) override; // OK：顯式改寫
+	//virtual void some_func(int) override;   // 错误：Derive::some_func並沒有override Base::some_func
+	virtual void some_func(float) override; // OK
 };
 
 int main()
 {
-
+    
 }

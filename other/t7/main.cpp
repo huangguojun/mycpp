@@ -18,12 +18,12 @@
 
 #include <iostream>
 using namespace std;
-int main()
+
+int main() 
 {
-	for(int i = 0x01 ;i <= 0x10;i <<= 1)
-	{
-		cout << i << " " ;
-	}
-	cout << endl;
-	return 0;
+    for (int i = 0x01; i <= 0x10; i <<= 1) {
+        cout << i << " ";
+    }
+    cout << endl;
+    return 0;
 }

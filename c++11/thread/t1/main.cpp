@@ -19,8 +19,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include <iostream> // std::cout
-#include <thread>   // std::thread
+#include <iostream> 
+#include <thread>   
 
 void thread_task()
 {
