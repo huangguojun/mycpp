@@ -1,0 +1,14 @@
+* text=auto
+
+*.hpp text
+*.inl text
+*.cpp text
+*.doxy text
+*.html text
+*.css text
+*.in text
+*.txt text
+*.cmake text
+*.sh text eol=lf
+
+*.png binary
