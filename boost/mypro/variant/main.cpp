@@ -1,21 +1,3 @@
-/*
- * =====================================================================================
- *
- *       Filename:  main.cpp
- *
- *    Description:  
- *
- *        Version:  1.0
- *        Created:  2016年09月10日 15时54分28秒
- *       Revision:  none
- *       Compiler:  gcc
- *
- *         Author:  guojun.huang (), guojun0921@gmail.com
- *        Company:  WellD
- *
- * =====================================================================================
- */
-
 #include <boost/variant.hpp>
 #include <string>
 #include <iostream>
