@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/boost_property_tree-example-debug_settings.dir/debug_settings.cpp.o  -o boost_property_tree-example-debug_settings 
